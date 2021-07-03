@@ -24,7 +24,7 @@
     "test:coverage": "jest --coverage tests src/components --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"90\", \"branches\":\"90\", \"lines\":\"90\"}}'"
   },
   "dependencies": {
-    "next": "^10.2.0",
+    "next": "^11.0.1",
     "next-pwa": "^5.2.18",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
