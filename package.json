@@ -1,0 +1,53 @@
+{
+  "name": "nextjs-template",
+  "description": "Next.js template with lints & test",
+  "version": "0.1.0",
+  "private": true,
+  "repository": "https://github.com/stscoundrel/nextjs-template.git",
+  "author": "stscoundrel <silvennoinen.sampo@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src tests",
+    "fix": "eslint src tests --fix",
+    "jest": "jest --verbose --runInBand --passWithNoTests",
+    "test:unit": "yarn jest",
+    "test:integration": "yarn cypress run --env env=test --spec 'tests/integration/tests/**/*'",
+    "test:mutation": "stryker run",
+    "test:coverage": "jest --coverage tests src/components --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"90\", \"branches\":\"90\", \"lines\":\"90\"}}'"
+  },
+  "dependencies": {
+    "next": "^10.2.0",
+    "next-pwa": "^5.2.18",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "reset-css": "^5.0.1",
+    "sass": "^1.32.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/eslint-parser": "^7.13.14",
+    "@stryker-mutator/core": "^4.6.0",
+    "@stryker-mutator/jest-runner": "^4.6.0",
+    "babel-jest": "^26.6.3",
+    "cypress": "^7.2.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "react-test-renderer": "^17.0.2"
+  }
+}
