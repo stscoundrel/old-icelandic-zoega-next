@@ -24,30 +24,37 @@
     "test:coverage": "jest --coverage tests src/components --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"90\", \"branches\":\"90\", \"lines\":\"90\"}}'"
   },
   "dependencies": {
-    "next": "^10.2.0",
-    "next-pwa": "^5.2.18",
+    "next": "^11.0.1",
+    "next-pwa": "^5.2.22",
+    "old-icelandic-zoega": "^1.1.4",
+    "old-norse-alphabet": "^1.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "reset-css": "^5.0.1",
-    "sass": "^1.32.12"
+    "sass": "^1.35.1",
+    "slugify": "^1.5.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/eslint-parser": "^7.13.14",
-    "@stryker-mutator/core": "^4.6.0",
-    "@stryker-mutator/jest-runner": "^4.6.0",
-    "babel-jest": "^26.6.3",
-    "cypress": "^7.2.0",
-    "eslint": "^7.25.0",
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.7",
+    "@stryker-mutator/core": "^5.2.1",
+    "@stryker-mutator/jest-runner": "^5.2.1",
+    "babel-jest": "^27.0.6",
+    "cypress": "^7.6.0",
+    "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-cypress": "^2.11.2",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-config-next": "^11.0.1",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^26.6.3",
-    "react-test-renderer": "^17.0.2"
+    "jafningjar": "^1.0.0",
+    "jest": "^27.0.6",
+    "old-norse-alphabet-sort": "^1.1.2",
+    "react-test-renderer": "^17.0.2",
+    "volva": "^1.1.0"
   }
 }
