@@ -6471,6 +6471,11 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
+teljari@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/teljari/-/teljari-0.9.1.tgz#6729068dae87283025d633a56f364f859e479a5a"
+  integrity sha512-JaNt4NdzvqTFJiPeCYGzNKwCpf6cKKyEQ1GSRnpr4LjPuVOwcGl5rpcdUPGaJ9f1BJ4cO7XMO0SAOdm8vOP4Kw==
+
 temp-dir@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-2.0.0.tgz#bde92b05bdfeb1516e804c9c00ad45177f31321e"
