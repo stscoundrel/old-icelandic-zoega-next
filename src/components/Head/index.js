@@ -29,7 +29,7 @@ export default function Head({ type, content, letter = false }) {
         />
         <meta
           property='og:site_name'
-          content='Cleasby & Vigfusson - Old Norse Dictionary'
+          content='Old Icelandic Dictionary'
         />
         <meta
             property='og:url'
@@ -56,7 +56,7 @@ export default function Head({ type, content, letter = false }) {
         <link rel="manifest" href="/manifest.json" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <script type='application/ld+json' dangerouslySetInnerHTML={ { __html: schema } }/>
-        <meta name="google-site-verification" content="N-03eZsrRsGlfb-7XOYf0ZwyqEfDNrm3zXD6Kh_nBW4" />
+        <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_SITE_VERIFICATION} />
     </NextHead>
   )
 }
