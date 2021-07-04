@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 // Components.
 import Hamburger from 'components/Hamburger'
@@ -24,7 +25,7 @@ export default function Navigation({ letters, noSearch = false }) {
       <nav className={styles.section}>
         <div className={`${styles.topbar} container`}>
           <Link href="/">
-            <img src="/favicon-48x48.png" width="30" height="30" alt="To home" loading="lazy" />
+            <Image src="/favicon-48x48.png" width="30" height="30" alt="To home" />
           </Link>
           <Hamburger action={openNav} />
         </div>
