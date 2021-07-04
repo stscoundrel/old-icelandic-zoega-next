@@ -21,3 +21,11 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.blue {
+  color: $color-blue;
+}
