@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WordDefinition component Matches snapshot 1`] = `
+<article
+  className="section"
+>
+  <header>
+    <h1
+      lang="non"
+    >
+      Leynidyrr
+    </h1>
+    <small
+      className="subHeading"
+    >
+      Old Icelandic Dictionary - 
+      leynidyrr
+    </small>
+    <p>
+      Possible runic inscription in 
+      <em>
+        Younger Futhark:
+      </em>
+      <span
+        className="rune"
+      >
+        ᛚᛁᚢᚾᛁᛏᚢᚱᚱ
+      </span>
+    </p>
+    <p>
+      Meaning of Old Icelandic word 
+      <em>
+        "
+        leynidyrr
+        "
+      </em>
+    </p>
+  </header>
+  <dl
+    className="definitionList"
+  >
+    <dt>
+      <strong>
+        leynidyrr
+      </strong>
+    </dt>
+    <dd
+      className="itemDescription"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<abbr title=\\"feminine.\\">f.</abbr> <abbr title=\\"plural.\\">pl.</abbr> <i>secret door</i>.",
+        }
+      }
+    />
+  </dl>
+  <div
+    className="abbreviations"
+  >
+    <div
+      className="column"
+    >
+      <h4>
+        Abbreviations used:
+      </h4>
+      <dl
+        className="wrap"
+      >
+        <dt
+          className="abbreviation"
+        >
+          <strong>
+            f.
+          </strong>
+        </dt>
+        <dd
+          className="explanation"
+        >
+          feminine.
+        </dd>
+      </dl>
+      <dl
+        className="wrap"
+      >
+        <dt
+          className="abbreviation"
+        >
+          <strong>
+            pl.
+          </strong>
+        </dt>
+        <dd
+          className="explanation"
+        >
+          plural.
+        </dd>
+      </dl>
+    </div>
+  </div>
+</article>
+`;
