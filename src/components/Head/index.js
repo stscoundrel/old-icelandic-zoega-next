@@ -1,11 +1,14 @@
 import NextHead from 'next/head'
 
-export default function Head() {
-  // Populate per site/page logic.
-  const title = ''
-  const description = ''
-  const canonicalUrl = ''
-  const siteName = ''
+// Utils.
+import { getSeo } from 'lib/utils/seo'
+import { getSchema } from 'lib/utils/schema'
+import { getCanonicalUrl } from 'lib/utils/links'
+
+export default function Head({ type, content, letter = false }) {
+  const { title, description } = getSeo(content, type)
+  const schema = getSchema(content, type)
+  const canonicalUrl = getCanonicalUrl(content, type, letter)
 
   return (
     <NextHead>
@@ -26,7 +29,7 @@ export default function Head() {
         />
         <meta
           property='og:site_name'
-          content={siteName}
+          content='Cleasby & Vigfusson - Old Norse Dictionary'
         />
         <meta
             property='og:url'
@@ -52,6 +55,8 @@ export default function Head() {
         <meta name="theme-color" content="#3b4f68" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <script type='application/ld+json' dangerouslySetInnerHTML={ { __html: schema } }/>
+        <meta name="google-site-verification" content="N-03eZsrRsGlfb-7XOYf0ZwyqEfDNrm3zXD6Kh_nBW4" />
     </NextHead>
   )
 }
