@@ -13,11 +13,11 @@ exports[`LetterHeader component Matches snapshot 1`] = `
   <small
     className="subHeading"
   >
-    Cleasby & Vigfusson Dictionary - Letter 
+    Old Icelandic Dictionary - Letter 
     S
   </small>
   <p>
-    Old Norse words starting with letter 
+    Old Icelandic words starting with letter 
     S
   </p>
   <small
