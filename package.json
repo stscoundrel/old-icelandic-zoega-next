@@ -35,7 +35,8 @@
     "reset-css": "^5.0.1",
     "sass": "^1.35.1",
     "slugify": "^1.5.3",
-    "teljari": "^0.9.1"
+    "teljari": "^0.9.1",
+    "younger-futhark": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
