@@ -12,15 +12,105 @@ Array [
       <div
         className="topbar container"
       >
-        <img
-          alt="To home"
-          height="30"
-          loading="lazy"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          src="/favicon-48x48.png"
-          width="30"
-        />
+        <div
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "margin": 0,
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "block",
+                "maxWidth": "100%",
+              }
+            }
+          >
+            <img
+              alt=""
+              aria-hidden={true}
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+              style={
+                Object {
+                  "border": "none",
+                  "display": "block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "padding": 0,
+                }
+              }
+            />
+          </div>
+          <noscript>
+            <img
+              alt="To home"
+              decoding="async"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              src="/_next/image?url=%2Ffavicon-48x48.png&w=64&q=75"
+              srcSet="/_next/image?url=%2Ffavicon-48x48.png&w=32&q=75 1x, /_next/image?url=%2Ffavicon-48x48.png&w=64&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+          <img
+            alt="To home"
+            decoding="async"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </div>
         <div
           aria-label="Open menu"
           className="hamburger"
