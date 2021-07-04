@@ -55,6 +55,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jafningjar": "^1.0.0",
     "jest": "^27.0.6",
+    "node-mocks-http": "^1.10.1",
     "old-norse-alphabet-sort": "^1.1.2",
     "react-test-renderer": "^17.0.2",
     "spyrjari": "^1.0.4",
