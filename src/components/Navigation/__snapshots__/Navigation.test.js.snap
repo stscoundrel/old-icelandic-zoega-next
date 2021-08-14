@@ -35,7 +35,6 @@ Array [
           <img
             alt=""
             aria-hidden={true}
-            role="presentation"
             src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
             style={
               Object {
@@ -51,6 +50,7 @@ Array [
         <noscript>
           <img
             alt="To home"
+            data-nimg={true}
             decoding="async"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -82,6 +82,7 @@ Array [
         </noscript>
         <img
           alt="To home"
+          data-nimg={true}
           decoding="async"
           onClick={[Function]}
           onMouseEnter={[Function]}
