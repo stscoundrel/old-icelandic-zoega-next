@@ -48,11 +48,42 @@ Array [
               }
             />
           </div>
+          <img
+            alt="To home"
+            data-nimg="intrinsic"
+            decoding="async"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
           <noscript>
             <img
               alt="To home"
-              data-nimg={true}
+              data-nimg="intrinsic"
               decoding="async"
+              loading="lazy"
               onClick={[Function]}
               onMouseEnter={[Function]}
               src="/_next/image?url=%2Ffavicon-48x48.png&w=64&q=75"
@@ -81,36 +112,6 @@ Array [
               }
             />
           </noscript>
-          <img
-            alt="To home"
-            data-nimg={true}
-            decoding="async"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
         </div>
         <div
           aria-label="Open menu"
