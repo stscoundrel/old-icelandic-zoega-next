@@ -6706,10 +6706,10 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
-teljari@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/teljari/-/teljari-1.1.0.tgz#fb9f39c3146f2ee613629b2b6e991420677c8891"
-  integrity sha512-Cy/4uO3XX6PrpjSCxdp68exvdyWnFrXnBQefcsv0GiS04EcSrkgv4Dv1nzJeyiH3aLuvlYuv7RSjs1UdIafvUA==
+teljari@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/teljari/-/teljari-1.1.1.tgz#19f57d3436334eca8d062e337bba1bd2fc1a76b4"
+  integrity sha512-mIuWXL88z/5jLDpJw/nfjCvBDEs98ygK2NaA8l+k6YxH8c0fgEQ4QfLb3SiS1BmYKGSjXKjD3f/bLH1dvFNGLA==
 
 temp-dir@^2.0.0:
   version "2.0.0"
