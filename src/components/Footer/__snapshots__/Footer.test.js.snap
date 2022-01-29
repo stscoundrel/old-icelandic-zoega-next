@@ -199,7 +199,8 @@ exports[`Footer component Matches snapshot 1`] = `
     <small
       className="copyright"
     >
-      Copyright © 2021
+      Copyright © 2021 - 2021
+      <br />
       <a
         href="https://github.com/stscoundrel"
         rel="noopener noreferrer"
