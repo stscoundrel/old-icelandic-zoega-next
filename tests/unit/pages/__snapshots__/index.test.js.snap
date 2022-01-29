@@ -636,7 +636,14 @@ Array [
           Based on \`"A Concise Dictionary of Old Icelandic\`" dictionary.
         </p>
         <p>
-          Geir Zoëga attempted to to make an easier-to-approach version of the more full Cleasby - Vigfusson dictionary
+          Geir Zoëga attempted to to make an easier-to-approach version of the more full 
+          <a
+            href="https://cleasby-vigfusson-dictionary.vercel.app/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Cleasby - Vigfusson dictionary.
+          </a>
         </p>
         <p>
           It was published in 1910, which leads to there being many public domain versions of the book available.

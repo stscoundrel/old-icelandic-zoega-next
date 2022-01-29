@@ -12,7 +12,10 @@ export default function Footer({ letters }) {
           <h2>About</h2>
           <p>Based on `&quot;A Concise Dictionary of Old Icelandic`&quot; dictionary.</p>
           <p>Geir Zoëga attempted to to make an easier-to-approach version
-            of the more full Cleasby - Vigfusson dictionary</p>
+            of the more full <ExternalLink
+                title="Cleasby - Vigfusson dictionary."
+                href="https://cleasby-vigfusson-dictionary.vercel.app/"
+              /></p>
           <p>It was published in 1910,
           which leads to there being many public domain versions of the book available.</p>
         </ContentArea>
