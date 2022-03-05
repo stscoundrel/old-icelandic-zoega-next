@@ -1,4 +1,8 @@
-module.exports = {
+const nextJest = require('next/jest')
+
+const createJestConfig = nextJest({ __dirname })
+
+const customJestConfig = {
   testEnvironment: 'jsdom',
   collectCoverageFrom: [
     'src/**',
@@ -10,10 +14,6 @@ module.exports = {
     '!**/*_document.js',
   ],
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
-  transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
-    '^.+\\.css$': '<rootDir>/config/jest/cssTransform.js',
-  },
   transformIgnorePatterns: [
     '/node_modules/',
     '^.+\\.module\\.(css|sass|scss)$',
@@ -25,5 +25,6 @@ module.exports = {
   setupFiles: [
     '<rootDir>/setupTests.js',
   ],
-};
-  
+}
+
+module.exports = createJestConfig(customJestConfig)
