@@ -15,4 +15,5 @@ module.exports = withPWA({
   eslint: {
     ignoreDuringBuilds: true,
   },
+  swcMinify: true,
 })
