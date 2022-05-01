@@ -60,7 +60,7 @@
     "old-norse-alphabet-sort": "^1.1.8",
     "react-test-renderer": "^18.0.0",
     "spyrjari": "^1.0.4",
-    "typescript": "^4.6.3",
+    "typescript": "^4.6.4",
     "volva": "^1.2.2"
   }
 }
