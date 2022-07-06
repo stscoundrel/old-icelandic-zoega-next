@@ -2,6 +2,8 @@ const { getDictionary } = require('old-icelandic-zoega')
 const { VALID_AS_FIRST } = require('old-norse-alphabet')
 const { slugifyWord, slugifyLetter } = require('../utils/slugs')
 
+let dictionaryCache = null
+
 const addSlugs = (words) => {
   const existingSlugs = {}
 
@@ -26,12 +28,16 @@ const addSlugs = (words) => {
 }
 
 export const getAllWords = () => {
+  if (dictionaryCache) return dictionaryCache
+
   const words = getDictionary()
 
   /**
    * Add URL safe slugs.
    */
   const formattedWords = addSlugs(words)
+
+  dictionaryCache = formattedWords
 
   return formattedWords
 }
