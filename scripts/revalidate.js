@@ -4,7 +4,7 @@ let start = 0
 
 // Url for localhost: http://127.0.1:3000
 
-const revalidatePages = async (secret, baseUrl = 'https://old-icelandic.vercel.app/') => {
+const revalidatePages = async (secret, baseUrl = 'https://old-icelandic.vercel.app') => {
   try {
     while (start < WORDS) {
       const end = start + 250
