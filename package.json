@@ -61,7 +61,7 @@
     "old-norse-alphabet-sort": "^1.1.10",
     "react-test-renderer": "^18.2.0",
     "spyrjari": "^1.0.4",
-    "typescript": "^4.7.4",
+    "typescript": "^4.8.2",
     "volva": "^2.0.2"
   }
 }
