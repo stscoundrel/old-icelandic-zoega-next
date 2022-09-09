@@ -177,6 +177,7 @@ exports[`Footer component Matches snapshot 1`] = `
               href="/letter/a"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               A
             </a>
@@ -189,6 +190,7 @@ exports[`Footer component Matches snapshot 1`] = `
               href="/letter/b"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               B
             </a>
