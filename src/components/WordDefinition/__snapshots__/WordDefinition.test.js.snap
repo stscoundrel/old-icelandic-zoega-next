@@ -47,8 +47,8 @@ exports[`WordDefinition component Matches snapshot 1`] = `
     <dd
       className="itemDescription"
       dangerouslySetInnerHTML={
-        Object {
-          "__html": "<abbr title=\\"feminine.\\">f.</abbr> <abbr title=\\"plural.\\">pl.</abbr> <i>secret door</i>.",
+        {
+          "__html": "<abbr title="feminine.">f.</abbr> <abbr title="plural.">pl.</abbr> <i>secret door</i>.",
         }
       }
     />
