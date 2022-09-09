@@ -25,7 +25,7 @@
   "dependencies": {
     "abbreviatrix": "^1.0.6",
     "markari": "^1.0.6",
-    "next": "^12.2.3",
+    "next": "^12.3.0",
     "next-pwa": "^5.5.4",
     "old-icelandic-zoega": "^1.2.2",
     "old-icelandic-zoega-abbreviations": "^1.0.2",
