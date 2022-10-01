@@ -62,6 +62,6 @@
     "react-test-renderer": "^18.2.0",
     "spyrjari": "^1.0.4",
     "typescript": "^4.8.3",
-    "volva": "^2.0.2"
+    "volva": "^2.0.3"
   }
 }
