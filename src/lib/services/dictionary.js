@@ -8,7 +8,7 @@ const addSlugs = (words) => {
   const existingSlugs = {}
 
   const formattedWords = words.map((word) => {
-    let slug = slugifyWord(word.word).toLowerCase()
+    let slug = slugifyWord(word.word)
 
     if (existingSlugs[slug]) {
       // Double slug, make unique.

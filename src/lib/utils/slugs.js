@@ -64,10 +64,10 @@ export const slugifyLetter = (letter) => {
     slug = slugify(letter)
   }
 
-  return slug
+  return slug.toLowerCase()
 }
 
-export const slugifyWord = (word) => slugify(word)
+export const slugifyWord = (word) => slugify(word).toLowerCase()
 
 export const decodeLetter = (slug) => {
   let letter = null
