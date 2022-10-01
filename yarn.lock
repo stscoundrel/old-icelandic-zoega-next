@@ -4898,10 +4898,10 @@ old-icelandic-zoega-abbreviations@^1.0.2:
   resolved "https://registry.yarnpkg.com/old-icelandic-zoega-abbreviations/-/old-icelandic-zoega-abbreviations-1.0.2.tgz#1fc3d2de591f3d70a922dc288a2fd99998461237"
   integrity sha512-ZkFP6mkyJVeerfOAXKNHuDELoHmTRwkh7vlz/RVE06ghJTI7xTbCC3ZKUSbX2vPqc2TLihwFB5OQFGvO5VTbdQ==
 
-old-icelandic-zoega@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/old-icelandic-zoega/-/old-icelandic-zoega-1.2.2.tgz#99da77b12707a69d98273872b09b09996d266943"
-  integrity sha512-JvK3wp+KvdFRE3azqqeJpbKfuvSsr2WDmPhL3adpE4QzoYmuctn8JkK1A79/6qAvSufft/W0lyzIIxCe3tWHYA==
+old-icelandic-zoega@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/old-icelandic-zoega/-/old-icelandic-zoega-1.2.3.tgz#0c43c18d80c0bcbd3d76305ff864c3eda4246045"
+  integrity sha512-U4IWXUUbBesPLYGNvUwzPWkmSXF2Y+Tj6EWj3EE3YV/2nsHj96c+2dSrdfrxWa1n6/axWdkScLgF8cG5LMw/dA==
 
 old-norse-alphabet-sort@^1.1.10:
   version "1.1.10"
