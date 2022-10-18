@@ -21,7 +21,16 @@ export default function Footer({ letters }) {
         </ContentArea>
 
         <ContentArea>
-          <h3>Old Norse language</h3>
+          <h3 className="h4">Old Icelandic language</h3>
+          <p>The Old Icelandic language was a later branch of Old West Norse,
+            spoken and written in Iceland in the Middle Ages. It was close to Old Norwegian,
+            but differed in orthography and phonology.</p>
+
+          <p>Old Icelandic is also the language of the Viking Sagas</p>
+        </ContentArea>
+
+        <ContentArea>
+          <h3 className="h4">Old Norse language</h3>
           <p>Old Norse was a North Germanic language that was spoken by inhabitants of
           Scandinavia and their overseas settlements from about the 7th to the 15th centuries.</p>
 
