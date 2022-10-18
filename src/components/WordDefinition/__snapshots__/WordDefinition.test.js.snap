@@ -17,25 +17,22 @@ exports[`WordDefinition component Matches snapshot 1`] = `
       leynidyrr
     </small>
     <p>
-      Possible runic inscription in 
-      <em>
-        Younger Futhark:
-      </em>
-      <span
-        className="rune"
-      >
-        ᛚᛁᚢᚾᛁᛏᚢᚱᚱ
-      </span>
-    </p>
-    <p>
       Meaning of Old Icelandic word 
       <em>
         "
         leynidyrr
         "
       </em>
+       in English.
     </p>
   </header>
+  <p>
+    As defined by 
+    <em>
+      A Concise Dictionary of Old Icelandic
+    </em>
+     (Geir Zoëga):
+  </p>
   <dl
     className="definitionList"
   >
@@ -53,6 +50,17 @@ exports[`WordDefinition component Matches snapshot 1`] = `
       }
     />
   </dl>
+  <p>
+    Possible runic inscription in 
+    <em>
+      Younger Futhark:
+    </em>
+    <span
+      className="rune"
+    >
+      ᛚᛁᚢᚾᛁᛏᚢᚱᚱ
+    </span>
+  </p>
   <div
     className="abbreviations"
   >
