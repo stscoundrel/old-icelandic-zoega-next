@@ -646,25 +646,22 @@ exports[`Word page: render & usage Matches snapshot 1`] = `
           leynidyrr
         </small>
         <p>
-          Possible runic inscription in 
-          <em>
-            Younger Futhark:
-          </em>
-          <span
-            className="rune"
-          >
-            ᛚᛁᚢᚾᛁᛏᚢᚱᚱ
-          </span>
-        </p>
-        <p>
           Meaning of Old Icelandic word 
           <em>
             "
             leynidyrr
             "
           </em>
+           in English.
         </p>
       </header>
+      <p>
+        As defined by 
+        <em>
+          A Concise Dictionary of Old Icelandic
+        </em>
+         (Geir Zoëga):
+      </p>
       <dl
         className="definitionList"
       >
@@ -682,6 +679,17 @@ exports[`Word page: render & usage Matches snapshot 1`] = `
           }
         />
       </dl>
+      <p>
+        Possible runic inscription in 
+        <em>
+          Younger Futhark:
+        </em>
+        <span
+          className="rune"
+        >
+          ᛚᛁᚢᚾᛁᛏᚢᚱᚱ
+        </span>
+      </p>
       <div
         className="abbreviations"
       >
@@ -773,7 +781,24 @@ exports[`Word page: render & usage Matches snapshot 1`] = `
       <section
         className="section"
       >
-        <h3>
+        <h3
+          className="h4"
+        >
+          Old Icelandic language
+        </h3>
+        <p>
+          The Old Icelandic language was a later branch of Old West Norse, spoken and written in Iceland in the Middle Ages. It was close to Old Norwegian, but differed in orthography and phonology.
+        </p>
+        <p>
+          Old Icelandic is also the language of the Viking Sagas
+        </p>
+      </section>
+      <section
+        className="section"
+      >
+        <h3
+          className="h4"
+        >
           Old Norse language
         </h3>
         <p>

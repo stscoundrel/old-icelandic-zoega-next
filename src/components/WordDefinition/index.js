@@ -15,11 +15,10 @@ export default function WordDefinition({ data, abbreviations }) {
         <small className={styles.subHeading}>
           Old Icelandic Dictionary - {word.toLowerCase()}
         </small>
-        <p>Possible runic inscription in <em>Younger Futhark:</em>
-          <span className={styles.rune}>{ lettersToRunes(word) }</span>
-        </p>
-        <p>Meaning of Old Icelandic word <em>&quot;{word}&quot;</em></p>
+        <p>Meaning of Old Icelandic word <em>&quot;{word}&quot;</em> in English.</p>
       </header>
+
+      <p>As defined by <em>A Concise Dictionary of Old Icelandic</em> (Geir Zoëga):</p>
 
       {definitions.length > 1 && <p><dfn className="capitalize">{word}</dfn> Old Icelandic word can mean:</p>}
       {definitions.map((definition, index) => (
@@ -33,6 +32,10 @@ export default function WordDefinition({ data, abbreviations }) {
           ></dd>
         </dl>
       ))}
+
+      <p>Possible runic inscription in <em>Younger Futhark:</em>
+          <span className={styles.rune}>{ lettersToRunes(word) }</span>
+        </p>
 
       <Abbreviations abbreviations={abbreviations} />
     </article>
