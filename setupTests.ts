@@ -15,3 +15,5 @@ jest.mock('next/router', () => ({
     }
   },
 }))
+
+export {};
