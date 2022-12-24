@@ -61,16 +61,34 @@ export default function Footer({ letters }) {
                   href="https://github.com/stscoundrel/old-icelandic-zoega-abbreviations"
                 />
               </li>
-            </ul>
-          </nav>
-
-          <nav className={styles.nav}>
-            <h4 className={styles.navTitle}>Related packages</h4>
-            <ul>
               <li>
                 <ExternalLink
                   title="Younger Futhark Runes"
                   href="https://github.com/stscoundrel/younger-futhark"
+                />
+              </li>
+            </ul>
+          </nav>
+
+          <nav className={styles.nav}>
+            <h4 className={styles.navTitle}>Related dictionary projects</h4>
+            <ul>
+              <li>
+                <ExternalLink
+                  title="Cleasby and Vigfusson Old Norse Dictionary"
+                  href="https://cleasby-vigfusson-dictionary.vercel.app/"
+                />
+              </li>
+              <li>
+                <ExternalLink
+                  title="Dictionary of the Old Norwegian Language"
+                  href="https://old-norwegian-dictionary.vercel.app/"
+                />
+              </li>
+              <li>
+                <ExternalLink
+                  title="K.F Söderwall's Old Swedish Dictionary"
+                  href="https://old-swedish-dictionary.vercel.app/"
                 />
               </li>
               <li>
@@ -79,37 +97,6 @@ export default function Footer({ letters }) {
                   href="https://github.com/stscoundrel/old-norse-alphabet"
                 />
               </li>
-              <li>
-                <ExternalLink
-                  title="Old Norse Alphabet Sort"
-                  href="https://github.com/stscoundrel/old-norse-alphabet-sort"
-                />
-              </li>
-              <li>
-                <ExternalLink
-                  title="Gangleri"
-                  href="https://github.com/stscoundrel/gangleri"
-                />
-              </li>
-              <li>
-                <ExternalLink
-                  title="Teljari"
-                  href="https://github.com/stscoundrel/teljari"
-                />
-              </li>
-              <li>
-                <ExternalLink
-                  title="Markari"
-                  href="https://github.com/stscoundrel/markari"
-                />
-              </li>
-              <li>
-                <ExternalLink
-                  title="Spyrjari"
-                  href="https://github.com/stscoundrel/spyrjari"
-                />
-              </li>
-
             </ul>
           </nav>
 
