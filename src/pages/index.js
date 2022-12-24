@@ -28,8 +28,8 @@ export default function Index({ letters }) {
           Cleasby - Vigfusson dictionary, specifically for beginners and those interested in
           Old Icelandic prose writing.</p>
 
-        <Link href="/search" passHref>
-         <a className="button">Search the dictionary</a>
+        <Link href="/search" passHref className="button">
+          Search the dictionary
         </Link>
       </ContentArea>
 
