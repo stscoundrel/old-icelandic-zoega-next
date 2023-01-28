@@ -1,10 +1,20 @@
 import { getDictionary } from 'old-icelandic-zoega'
+import { DictionaryEntry as RawDictionaryEntry } from 'cleasby-vigfusson-dictionary'
 import { VALID_AS_FIRST } from 'old-norse-alphabet'
 import { slugifyWord, slugifyLetter } from '../utils/slugs'
 
-let dictionaryCache = null
+export interface DictionaryEntry extends RawDictionaryEntry {
+  slug: string,
+}
 
-const addSlugs = (words) => {
+export interface AlphabetLetter {
+  letter: string,
+  slug: string
+}
+
+let dictionaryCache: DictionaryEntry[] | null = null
+
+const addSlugs = (words: RawDictionaryEntry[]): DictionaryEntry[] => {
   const existingSlugs = {}
 
   const formattedWords = words.map((word) => {
@@ -27,7 +37,7 @@ const addSlugs = (words) => {
   return formattedWords
 }
 
-export const getAllWords = () => {
+export const getAllWords = (): DictionaryEntry[] => {
   if (dictionaryCache) return dictionaryCache
 
   const words = getDictionary()
@@ -42,7 +52,7 @@ export const getAllWords = () => {
   return formattedWords
 }
 
-export const getByLetter = (letter) => {
+export const getByLetter = (letter: string): DictionaryEntry[] => {
   const words = getAllWords()
   const byLetter = words.filter((entry) => (
     entry.word.charAt(0).toLowerCase() === letter.toLowerCase()))
@@ -50,9 +60,11 @@ export const getByLetter = (letter) => {
   return byLetter
 }
 
-export const getWord = (word) => getAllWords().filter((entry) => entry.slug === word)[0]
+export const getWord = (slug: string): DictionaryEntry => (
+  getAllWords().filter((entry) => entry.slug === slug)[0]
+)
 
-export const getAlphabet = () => {
+export const getAlphabet = (): AlphabetLetter[] => {
   const letters = [...VALID_AS_FIRST.filter((letter) => letter !== 'ǫ' && letter !== 'ø'), 'ö']
 
   const formattedLetters = letters.map((letter) => ({

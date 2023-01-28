@@ -1507,6 +1507,11 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/cleasby-vigfusson-dictionary@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/cleasby-vigfusson-dictionary/-/cleasby-vigfusson-dictionary-1.0.0.tgz#98e3e422191a6dcca634630b72382bee376384eb"
+  integrity sha512-aomgj/LpXPzD0WBiM2tPRJk1l1ss/bPlyvCXGv1UyWt1OM3j+PXtyCACIbuyQjdz78/0elqjKPTEQ85/QpB5Pg==
+
 "@types/estree@0.0.39":
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
@@ -5664,6 +5669,11 @@ saxes@^6.0.0:
   integrity sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==
   dependencies:
     xmlchars "^2.2.0"
+
+scandinavian-dictionary-crosslinker@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/scandinavian-dictionary-crosslinker/-/scandinavian-dictionary-crosslinker-0.1.1.tgz#a7a6db433f972414f5de7728c889223da0433745"
+  integrity sha512-Bm49AC+kS1m8ZKNuhwFNbtG8zEkjsI5z4riW5sg87xjoN3sDy5Bj06JX9lnsZcMZdPjcNeKWqfnR2Xpp2Tjtag==
 
 scheduler@^0.23.0:
   version "0.23.0"
