@@ -39,31 +39,59 @@ describe('Word page: render & usage', () => {
     },
   ]
 
+  const crosslinks = [
+    {
+      url: 'https://cleasby-vigfusson-dictionary.vercel.app/word/abbadis',
+      source: 'old-norse',
+    },
+    {
+      url: 'https://old-norwegian-dictionary.vercel.app/word/abbadis',
+      source: 'old-norwegian',
+    },
+  ]
+
+  const alphabet = getAlphabet()
+
   test('Does not crash', () => {
     const div = document.createElement('div')
     const root = ReactDOM.createRoot(div)
     root.render(
-      <Word entry={word} letters={getAlphabet()} abbreviations={abbreviations} />,
+      <Word
+        entry={word}
+        letters={alphabet}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+      />,
     )
   })
 
   test('Matches snapshot', () => {
     const tree = renderer.create(
-      <Word entry={word} letters={getAlphabet()} abbreviations={abbreviations} />,
+      <Word
+        entry={word}
+        letters={alphabet}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+      />,
     ).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   test('Returns null if entry is unavailable', () => {
     const tree = renderer.create(
-      <Word entry={null} letters={getAlphabet()} abbreviations={abbreviations} />,
+      <Word entry={null} letters={getAlphabet()} abbreviations={abbreviations} crosslinks={[]} />,
     ).toJSON()
     expect(tree).toBeNull()
   })
 
   test('Back button works', async () => {
     const tree = renderer.create(
-      <Word entry={word} letters={getAlphabet()} abbreviations={abbreviations} />,
+      <Word
+        entry={word}
+        letters={alphabet}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+      />,
     )
 
     // Click back btn.
@@ -111,6 +139,12 @@ describe('Word page: data fetching', () => {
           },
         ],
         letters: getAlphabet(),
+        crosslinks: [
+          {
+            source: 'old-norwegian',
+            url: 'https://old-norwegian-dictionary.vercel.app/word/leynidyrr',
+          },
+        ],
       },
     }
 
@@ -119,7 +153,7 @@ describe('Word page: data fetching', () => {
     expect(result).toEqual(expected)
   })
 
-  test('getStaticProps returns 404 redirect for unkown words', async () => {
+  test('getStaticProps returns 404 redirect for unknown words', async () => {
     const expected = {
       props: {},
       notFound: true,

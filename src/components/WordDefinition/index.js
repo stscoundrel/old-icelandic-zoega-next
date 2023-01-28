@@ -2,9 +2,10 @@ import { capitalize } from 'lib/utils/strings'
 import { lettersToRunes } from 'younger-futhark'
 import { addAbbreviationsToContent } from 'lib/services/abbreviations'
 import Abbreviations from 'components/Abbreviations'
+import Crosslinks from 'components/Crosslinks'
 import styles from './WordDefinition.module.scss'
 
-export default function WordDefinition({ data, abbreviations }) {
+export default function WordDefinition({ data, abbreviations, crosslinks }) {
   const { word, definitions } = data
 
   return (
@@ -38,6 +39,7 @@ export default function WordDefinition({ data, abbreviations }) {
         </p>
 
       <Abbreviations abbreviations={abbreviations} />
+      <Crosslinks crosslinks={crosslinks} />
     </article>
   )
 }

@@ -28,10 +28,7 @@ describe('Crosslinks service tests', () => {
 
   test('Returns crosslinks when slugs match', () => {
     const expected = [
-      {
-        url: 'https://old-icelandic.vercel.app/word/aaustr',
-        source: 'old-icelandic',
-      },
+      // Should omit link to old-icelandic dictionary, as it would be self-referencing.
       {
         url: 'https://old-norwegian-dictionary.vercel.app/word/aaustr',
         source: 'old-norwegian',
