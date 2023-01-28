@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Crosslinks component Matches the snapshot 1`] = `
+[
+  <h4>
+    Also available in related dictionaries:
+  </h4>,
+  <p>
+    This headword also appears in dictionaries of other languages closely related to Old Icelandic.
+  </p>,
+  <ul
+    className="list"
+  >
+    <li
+      className="listItem"
+    >
+      <a
+        href="https://cleasby-vigfusson-dictionary.vercel.app/word/abbadis"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Old Norse - Cleasby & Vigfusson Dictionary
+      </a>
+    </li>
+    <li
+      className="listItem"
+    >
+      <a
+        href="https://old-norwegian-dictionary.vercel.app/word/abbadis"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Old Norwegian - Johan Fritzner's Dictionary
+      </a>
+    </li>
+  </ul>,
+]
+`;
