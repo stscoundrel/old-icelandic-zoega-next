@@ -1,12 +1,21 @@
 // Services.
-import { getAlphabet } from 'lib/services/dictionary'
+import { AlphabetLetter, getAlphabet } from 'lib/services/dictionary'
 
 // Components.
 import Layout from 'components/Layout'
 import ContentArea from 'components/ContentArea'
 import Link from 'next/link'
+import SampleText from 'components/SampleText'
 
-export async function getStaticProps() {
+interface IndexProps {
+  letters: AlphabetLetter[]
+}
+
+interface IndexStaticProps {
+  props: IndexProps
+}
+
+export async function getStaticProps(): Promise<IndexStaticProps> {
   const letters = getAlphabet()
 
   return {
@@ -16,9 +25,9 @@ export async function getStaticProps() {
   }
 }
 
-export default function Index({ letters }) {
+export default function Index({ letters }: IndexProps) {
   return (
-    <Layout letters={letters} type='page'>
+    <Layout letters={letters} type='page' content={null}>
       <ContentArea>
         <h1 className="h2">A Concise Dictionary of Old Icelandic</h1>
         <p>Online version of the `&quot;A Concise Dictionary of Old Icelandic`&quot;
@@ -39,6 +48,8 @@ export default function Index({ letters }) {
           Old Norse is a dead language, that was the father of modern languages
         like Icelandic, Swedish, Norwegian, Danish, Faroese and Elfdalian.
         Popularly known as the language that vikings spoke.</p>
+
+        <SampleText />
       </ContentArea>
     </Layout>
   )

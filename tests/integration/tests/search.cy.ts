@@ -57,8 +57,8 @@ it('Search page yields expected amount of results', () => {
   cy.get('input[name="headword"]').click()
   cy.get('button[type="submit"').click()
 
-  // Should find 503 headwords.
-  cy.get('main > ul').last().find('> li').should('have.length', 650)
+  // Should find max amount of  headwords.
+  cy.get('main > ul').last().find('> li').should('have.length', 150)
 
   // Search for "spyrja" in headwords
   cy.get('input[type="search"]').last().clear().type('spyrja')
