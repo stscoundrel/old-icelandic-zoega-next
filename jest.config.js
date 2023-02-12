@@ -10,6 +10,7 @@ const customJestConfig = {
     '!**/node_modules/**',
     '!.next/**',
     '!**/*.js.snap',
+    '!**/*.tsx.snap',
     '!**/*_app.js',
     '!**/*_document.js',
   ],
