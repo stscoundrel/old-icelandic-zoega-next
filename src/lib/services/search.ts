@@ -14,7 +14,7 @@ const formatResults = (
   criteria: Criteria[],
 ) => {
   const formattedResults = results.map((result) => {
-    const foundIn = []
+    const foundIn: string[] = []
 
     if (criteria.includes('definitions')) {
       result.definitions.forEach((definition) => {
