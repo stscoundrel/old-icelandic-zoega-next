@@ -16,6 +16,13 @@ describe('Crosslinks component', () => {
     },
   ]
 
+  test('Only renders when content is available', () => {
+    const tree = renderer.create(
+      <Crosslinks crosslinks={[]} />,
+    )
+    expect(tree.toJSON()).toBeNull()
+  })
+
   test('Matches the snapshot', () => {
     const tree = renderer.create(
       <Crosslinks crosslinks={crosslinks} />,

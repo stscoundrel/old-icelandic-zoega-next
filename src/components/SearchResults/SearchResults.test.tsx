@@ -50,4 +50,13 @@ describe('SearchResults component', () => {
     const tree = renderer.create(<SearchResults words={words} />).toJSON()
     expect(tree).toMatchSnapshot()
   })
+
+  test('Matches snapshot (max results)', () => {
+    const maxResults = []
+    for (let i = 0; i < 150; i += 1) {
+      maxResults.push(words[0])
+    }
+    const tree = renderer.create(<SearchResults words={maxResults} />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })
