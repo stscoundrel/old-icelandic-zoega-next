@@ -1,8 +1,14 @@
 import { findAbbreviations } from 'old-icelandic-zoega-abbreviations'
 import { abbreviate } from 'abbreviatrix'
+import { DictionaryEntry } from './dictionary'
 
-export const getAbbreviations = ({ definitions }) => {
-  const combinedAbbreviations = []
+export interface Abbreviation{
+  abbreviation: string,
+  explanation: string
+}
+
+export const getAbbreviations = ({ definitions }: DictionaryEntry): Abbreviation[] => {
+  const combinedAbbreviations: Abbreviation[] = []
   const abbreviationSet = new Set()
 
   definitions.forEach((definition) => {
@@ -21,7 +27,11 @@ export const getAbbreviations = ({ definitions }) => {
 /**
  * Add abbr tags to content with explanations.
  */
-export const addAbbreviationsToContent = (content, abbreviations) => {
+export const addAbbreviationsToContent = (
+  content: string,
+  abbreviations:
+  Abbreviation[],
+): string => {
   let result = content
 
   abbreviations.forEach(({ abbreviation, explanation }) => {
