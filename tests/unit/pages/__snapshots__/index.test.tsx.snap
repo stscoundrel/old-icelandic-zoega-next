@@ -549,6 +549,567 @@ exports[`Index page Matches snapshot 1`] = `
       <p>
         Old Icelandic was a western dialect of Old Norse. Old Norse is a dead language, that was the father of modern languages like Icelandic, Swedish, Norwegian, Danish, Faroese and Elfdalian. Popularly known as the language that vikings spoke.
       </p>
+      <p
+        className="h4"
+      >
+        A sample of Old Icelandic:
+      </p>
+      <p>
+        <em>
+          <a
+            href="/word/ulfr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Úlfr
+          </a>
+           
+          <a
+            href="/word/heita"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            hét
+          </a>
+           
+          <a
+            href="/word/madr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            maðr
+          </a>
+          , 
+          <a
+            href="/word/sonr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            sonr
+          </a>
+           Bjálfa 
+          <a
+            href="/word/ok"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            ok
+          </a>
+           Hallberu, 
+          <a
+            href="/word/dottir"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            dóttur
+          </a>
+           
+          <a
+            href="/word/ulfr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Úlfs
+          </a>
+           
+          <a
+            href="/word/inn"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            ins
+          </a>
+           
+          <a
+            href="/word/o-2"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            ó
+          </a>
+          <a
+            href="/word/argr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            arga
+          </a>
+          . 
+          <a
+            href="/word/hon"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Hon
+          </a>
+           
+          <a
+            href="/word/vera"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            var
+          </a>
+           
+          <a
+            href="/word/systir"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            systir
+          </a>
+           Hallbjarnar 
+          <a
+            href="/word/halftroll"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            hálftrölls
+          </a>
+           í Hrafnistu, 
+          <a
+            href="/word/fadir"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            föður
+          </a>
+           
+          <a
+            href="/word/ketill"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Ketils
+          </a>
+           hængs. 
+          <a
+            href="/word/ulfr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Úlfr
+          </a>
+           
+          <a
+            href="/word/var"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            var
+          </a>
+           
+          <a
+            href="/word/madr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            maðr
+          </a>
+           
+          <a
+            href="/word/sva"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            svá
+          </a>
+           
+          <a
+            href="/word/mikill"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            mikill
+          </a>
+           
+          <a
+            href="/word/ok"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            ok
+          </a>
+           
+          <a
+            href="/word/sterkr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            sterkr
+          </a>
+          , 
+          <a
+            href="/word/at"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            at
+          </a>
+           
+          <a
+            href="/word/eigi"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            eigi
+          </a>
+           
+          <a
+            href="/word/varu"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            váru
+          </a>
+           
+          <a
+            href="/word/hann"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            hans
+          </a>
+           
+          <a
+            href="/word/jafningi"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            jafningjar
+          </a>
+          . 
+          <a
+            href="/word/en"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            En
+          </a>
+           
+          <a
+            href="/word/er"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            er
+          </a>
+           
+          <a
+            href="/word/hann"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            hann
+          </a>
+           
+          <a
+            href="/word/vera"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            var
+          </a>
+           á 
+          <a
+            href="/word/ungr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            unga
+          </a>
+           
+          <a
+            href="/word/aldr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            aldri
+          </a>
+          , lá 
+          <a
+            href="/word/hann"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            hann
+          </a>
+           
+          <a
+            href="/word/i"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            í
+          </a>
+           
+          <a
+            href="/word/vikingr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            víkingu
+          </a>
+           
+          <a
+            href="/word/ok"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            ok
+          </a>
+           
+          <a
+            href="/word/herja"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            herjaði
+          </a>
+          . 
+          <a
+            href="/word/med"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Með
+          </a>
+           
+          <a
+            href="/word/hann"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            honum
+          </a>
+           
+          <a
+            href="/word/vera"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            var
+          </a>
+           
+          <a
+            href="/word/i"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            í
+          </a>
+           
+          <a
+            href="/word/felagskapr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            félagsskap
+          </a>
+           
+          <a
+            href="/word/sa"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            sá
+          </a>
+           
+          <a
+            href="/word/madr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            maðr
+          </a>
+          , 
+          <a
+            href="/word/er"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            er
+          </a>
+           
+          <a
+            href="/word/kalla"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            kallaðr
+          </a>
+           
+          <a
+            href="/word/var"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            var
+          </a>
+           Berðlu-Kári, 
+          <a
+            href="/word/gofugr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            göfugr maðr
+          </a>
+           
+          <a
+            href="/word/ok"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            ok
+          </a>
+           
+          <a
+            href="/word/inn"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            inn
+          </a>
+           
+          <a
+            href="/word/mest"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            mesti
+          </a>
+           
+          <a
+            href="/word/afreksmadr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            afreksmaðr
+          </a>
+           
+          <a
+            href="/word/at"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            at
+          </a>
+           
+          <a
+            href="/word/afli"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            afli
+          </a>
+           
+          <a
+            href="/word/ok"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            ok
+          </a>
+           
+          <a
+            href="/word/araedi"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            áræði
+          </a>
+          . 
+          <a
+            href="/word/hann"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Hann
+          </a>
+           
+          <a
+            href="/word/var"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            var
+          </a>
+           
+          <a
+            href="/word/berserkr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            berserkr
+          </a>
+          .
+        </em>
+      </p>
+      <p>
+        - Excerpt from Egils saga Skalla-Grímssonar, from 1220 - 1240 AD.
+      </p>
+      <hr />
     </section>
     <div
       aria-label="Back to top"
