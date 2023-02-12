@@ -5,6 +5,7 @@ import { AlphabetLetter, getAlphabet } from 'lib/services/dictionary'
 import Layout from 'components/Layout'
 import ContentArea from 'components/ContentArea'
 import Link from 'next/link'
+import SampleText from 'components/SampleText'
 
 interface IndexProps {
   letters: AlphabetLetter[]
@@ -47,6 +48,8 @@ export default function Index({ letters }: IndexProps) {
           Old Norse is a dead language, that was the father of modern languages
         like Icelandic, Swedish, Norwegian, Danish, Faroese and Elfdalian.
         Popularly known as the language that vikings spoke.</p>
+
+        <SampleText />
       </ContentArea>
     </Layout>
   )
