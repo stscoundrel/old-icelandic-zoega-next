@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search API endpoint Should return search results 1`] = `
+[
+  {
+    "definitions": [
+      "m. <i>drinker</i> (lítill, mikill ~).",
+    ],
+    "foundIn": [
+      "In headword: drykkjumaðr",
+    ],
+    "slug": "drykkjumadr",
+    "word": "drykkjumaðr",
+  },
+  {
+    "definitions": [
+      "m. = ferjukarl.",
+    ],
+    "foundIn": [
+      "In headword: ferjumaðr",
+    ],
+    "slug": "ferjumadr",
+    "word": "ferjumaðr",
+  },
+  {
+    "definitions": [
+      "m. <i>sorcerer, wizard</i>.",
+    ],
+    "foundIn": [
+      "In headword: forneskjumaðr",
+    ],
+    "slug": "forneskjumadr",
+    "word": "forneskjumaðr",
+  },
+  {
+    "definitions": [
+      "m. <i>lucky man</i>.",
+    ],
+    "foundIn": [
+      "In headword: hamingjumaðr",
+    ],
+    "slug": "hamingjumadr",
+    "word": "hamingjumaðr",
+  },
+  {
+    "definitions": [
+      "m. <i>hard-working man</i>.",
+    ],
+    "foundIn": [
+      "In headword: iðjumaðr",
+    ],
+    "slug": "idjumadr",
+    "word": "iðjumaðr",
+  },
+  {
+    "definitions": [
+      "m. <i>helper in lawsuits</i>; mikill málafylgismaðr, <i>a great taker up of suits</i>.",
+    ],
+    "foundIn": [
+      "In headword: málafylgjumaðr",
+    ],
+    "slug": "malafylgjumadr",
+    "word": "málafylgjumaðr",
+  },
+  {
+    "definitions": [
+      "m. <i>drunkard</i>.",
+    ],
+    "foundIn": [
+      "In headword: ofdrykkjumaðr",
+    ],
+    "slug": "ofdrykkjumadr",
+    "word": "ofdrykkjumaðr",
+  },
+  {
+    "definitions": [
+      "m. <i>a person in bed</i>.",
+    ],
+    "foundIn": [
+      "In headword: rekkjumaðr",
+    ],
+    "slug": "rekkjumadr",
+    "word": "rekkjumaðr",
+  },
+  {
+    "definitions": [
+      "m. <i>guileful man</i>.",
+    ],
+    "foundIn": [
+      "In headword: undirhyggjumaðr",
+    ],
+    "slug": "undirhyggjumadr",
+    "word": "undirhyggjumaðr",
+  },
+]
+`;
