@@ -2,6 +2,12 @@ import { getAllWords } from 'lib/services/dictionary'
 import { Criteria, searchDictionary } from 'lib/services/search';
 import { NextApiRequest, NextApiResponse } from 'next';
 
+export const config = {
+  api: {
+    memory: 512,
+  },
+}
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (!req.query.search || !req.query.criteria) {
     return res.status(422).json({ message: 'Missing search term or criteria' })
