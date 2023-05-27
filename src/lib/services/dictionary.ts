@@ -7,6 +7,13 @@ export interface DictionaryEntry extends RawDictionaryEntry {
   slug: string,
 }
 
+// Light weight alternative when definitions are not needed.
+// Next.js caches all props as JSON, so no need to store megabytes of definitions when not used.
+export interface DictionaryEntryDTO {
+  word: string,
+  slug: string
+}
+
 export interface AlphabetLetter {
   letter: string,
   slug: string
@@ -52,10 +59,12 @@ export const getAllWords = (): DictionaryEntry[] => {
   return formattedWords
 }
 
-export const getByLetter = (letter: string): DictionaryEntry[] => {
+export const getByLetter = (letter: string): DictionaryEntryDTO[] => {
   const words = getAllWords()
-  const byLetter = words.filter((entry) => (
-    entry.word.charAt(0).toLowerCase() === letter.toLowerCase()))
+  const byLetter = words
+    .filter((entry) => (
+      entry.word.charAt(0).toLowerCase() === letter.toLowerCase()))
+    .map((entry) => ({ word: entry.word, slug: entry.slug }))
 
   return byLetter
 }
