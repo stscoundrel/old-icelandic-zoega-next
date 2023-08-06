@@ -1852,10 +1852,10 @@ abab@^2.0.6:
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.6.tgz#41b80f2c871d19686216b82309231cfd3cb3d291"
   integrity sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==
 
-abbreviatrix@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/abbreviatrix/-/abbreviatrix-1.0.7.tgz#403f07242d127f3d98667eae26ccabfde5d73117"
-  integrity sha512-oNIL6KOkVUB9Qkjnc8jCmq8YjrutLFA3PVCcmbLHRT7/tM2BbGEyeyTQ08M57RW3LQPeQlW0wLR8wu8DWpWpPQ==
+abbreviatrix@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/abbreviatrix/-/abbreviatrix-1.0.8.tgz#1cb59050814644d35cfb073a17703b3aa01bd748"
+  integrity sha512-rS4jfEowBpnWfXHcszxp4HisjkCACJDACsW3ZJEj9pNFDnMstcoyot8PO1Cgdyx6iXADF60yJHO/YE7xYShXVw==
 
 accepts@^1.3.7:
   version "1.3.8"
