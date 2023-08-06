@@ -1,10 +1,10 @@
 // Services.
+import Link from 'next/link'
 import { AlphabetLetter, getAlphabet } from 'lib/services/dictionary'
 
 // Components.
 import Layout from 'components/Layout'
 import ContentArea from 'components/ContentArea'
-import Link from 'next/link'
 import SampleText from 'components/SampleText'
 
 interface IndexProps {

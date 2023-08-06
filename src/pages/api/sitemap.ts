@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { getSitemapContent, formatSitemap } from 'lib/services/sitemap'
 import { SitemapStream, streamToPromise } from 'sitemap'
+import { getSitemapContent, formatSitemap } from 'lib/services/sitemap'
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const content = getSitemapContent()
