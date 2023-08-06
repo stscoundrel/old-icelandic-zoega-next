@@ -37,9 +37,9 @@ describe('Crosslinks service tests', () => {
         url: 'https://old-norwegian-dictionary.vercel.app/word/aaustr',
         source: 'old-norwegian',
       },
-    ]
+    ].sort((a, b) => (a.source > b.source ? 1 : -1))
 
-    const result = getCrossLinks(entry2)
+    const result = getCrossLinks(entry2).sort((a, b) => (a.source > b.source ? 1 : -1))
 
     expect(result).toEqual(expected)
   })

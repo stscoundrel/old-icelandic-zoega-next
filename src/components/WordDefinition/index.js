@@ -1,5 +1,5 @@
-import { capitalize } from 'lib/utils/strings'
 import { lettersToRunes } from 'younger-futhark'
+import { capitalize } from 'lib/utils/strings'
 import { addAbbreviationsToContent } from 'lib/services/abbreviations'
 import Abbreviations from 'components/Abbreviations'
 import Crosslinks from 'components/Crosslinks'

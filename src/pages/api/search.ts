@@ -1,6 +1,6 @@
+import { NextApiRequest, NextApiResponse } from 'next';
 import { getAllWords } from 'lib/services/dictionary'
 import { Criteria, searchDictionary } from 'lib/services/search';
-import { NextApiRequest, NextApiResponse } from 'next';
 
 export const config = {
   api: {
