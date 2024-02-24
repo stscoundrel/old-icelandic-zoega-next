@@ -141,12 +141,12 @@ describe('Word page: data fetching', () => {
         letters: getAlphabet(),
         crosslinks: [
           {
-            source: 'old-norwegian',
-            url: 'https://old-norwegian-dictionary.vercel.app/word/leynidyrr',
-          },
-          {
             url: 'https://cleasby-vigfusson-dictionary.vercel.app/word/leyni-dyrr',
             source: 'old-norse',
+          },
+          {
+            source: 'old-norwegian',
+            url: 'https://old-norwegian-dictionary.vercel.app/word/leynidyrr',
           },
         ],
       },
