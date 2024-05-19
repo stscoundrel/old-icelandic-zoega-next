@@ -5,7 +5,7 @@ export default function WordLink({ data }) {
   const { slug, word } = data
 
   return (
-   <Link key={`link${slug}`} href={`/word/${slug}`} className={styles.link}>
+   <Link key={`link${slug}`} href={`/word/${slug}`} className={styles.link} prefetch={false}>
       {word.toLowerCase()}
     </Link>
   )

@@ -37,7 +37,7 @@ export default function Index({ letters }: IndexProps) {
           Cleasby - Vigfusson dictionary, specifically for beginners and those interested in
           Old Icelandic prose writing.</p>
 
-        <Link href="/search" passHref className="button">
+        <Link href="/search" passHref className="button" prefetch={false}>
           Search the dictionary
         </Link>
       </ContentArea>
