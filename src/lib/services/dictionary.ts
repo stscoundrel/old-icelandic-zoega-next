@@ -21,6 +21,7 @@ export interface AlphabetLetter {
 }
 
 let dictionaryCache: DictionaryEntry[] | null = null
+let cachedInitialPages: string[] | null = null
 
 const addSlugs = (words: RawDictionaryEntry[]): DictionaryEntry[] => {
   const existingSlugs = {}
@@ -104,6 +105,25 @@ export const getAlphabet = (): AlphabetLetter[] => {
   }))
 
   return formattedLetters
+}
+
+/**
+ * Initial word pages to build are basically 6000
+ * headword pages based on modulus. Larger number
+ * can not be deployed in one go.
+ */
+export const getInitialWordsToBuild = (): string[] => {
+  if (cachedInitialPages) return cachedInitialPages
+
+  const allWords = getAllWords()
+
+  const result: string[] = []
+  for (let i = 0; i < allWords.length; i += 5) {
+    result.push(allWords[i].slug);
+  }
+
+  cachedInitialPages = result
+  return cachedInitialPages
 }
 
 export default {
