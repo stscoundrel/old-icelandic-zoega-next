@@ -2,17 +2,19 @@ import ReactDOM from 'react-dom/client'
 import renderer from 'react-test-renderer'
 import { matchesSchema } from 'jafningjar'
 import Index, { getStaticProps } from 'pages/index'
-import { getAlphabet } from 'lib/services/dictionary'
+import { getAllWords, getAlphabet } from 'lib/services/dictionary'
 
 describe('Index page', () => {
   test('Does not crash', () => {
     const div = document.createElement('div')
     const root = ReactDOM.createRoot(div)
-    root.render(<Index letters={getAlphabet()} />)
+    root.render(<Index words={getAllWords().slice(0, 100)} letters={getAlphabet()} />)
   })
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(<Index letters={getAlphabet()} />).toJSON()
+    const tree = renderer.create(
+      <Index words={getAllWords().slice(0, 100)} letters={getAlphabet()} />,
+    ).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
@@ -22,6 +24,7 @@ describe('Index page: data fetching', () => {
     const expected = {
       props: {
         letters: [],
+        words: [],
       },
     }
 

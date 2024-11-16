@@ -1,5 +1,6 @@
-import { getDictionary } from 'old-icelandic-zoega'
-import { DictionaryEntry as RawDictionaryEntry } from 'cleasby-vigfusson-dictionary'
+import { getDictionary, getNoMarkupDictionary } from 'old-icelandic-zoega'
+import { oldNorseSort } from 'old-norse-alphabet-sort'
+import type { DictionaryEntry as RawDictionaryEntry } from 'cleasby-vigfusson-dictionary'
 import { VALID_AS_FIRST } from 'old-norse-alphabet'
 import { slugifyWord, slugifyLetter } from '../utils/slugs'
 
@@ -59,6 +60,17 @@ export const getAllWords = (): DictionaryEntry[] => {
   return formattedWords
 }
 
+export const getAllWordsWithoutMarkup = (): DictionaryEntry[] => {
+  const words = getNoMarkupDictionary()
+
+  /**
+   * Add URL safe slugs.
+   */
+  const formattedWords = addSlugs(words)
+
+  return formattedWords
+}
+
 export const getByLetter = (letter: string): DictionaryEntryDTO[] => {
   const words = getAllWords()
   const byLetter = words
@@ -71,6 +83,16 @@ export const getByLetter = (letter: string): DictionaryEntryDTO[] => {
 
 export const getWord = (slug: string): DictionaryEntry => (
   getAllWords().filter((entry) => entry.slug === slug)[0]
+)
+
+export const getRandomEntries = (): DictionaryEntry[] => (
+  // Return entries fit to be randomized "teasers"
+  // Therefore, content should be short, but not too short.
+  getAllWordsWithoutMarkup()
+    .sort(() => Math.random() - 0.5)
+    .filter((entry) => entry.definitions[0].length < 50 && entry.definitions[0].length > 15)
+    .slice(0, 36)
+    .sort((a, b) => oldNorseSort(a.word, b.word))
 )
 
 export const getAlphabet = (): AlphabetLetter[] => {

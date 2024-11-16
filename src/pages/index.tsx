@@ -1,14 +1,18 @@
 // Services.
 import Link from 'next/link'
-import { AlphabetLetter, getAlphabet } from 'lib/services/dictionary'
+import {
+  type AlphabetLetter, type DictionaryEntry, getAlphabet, getRandomEntries,
+} from 'lib/services/dictionary'
 
 // Components.
 import Layout from 'components/Layout'
 import ContentArea from 'components/ContentArea'
 import SampleText from 'components/SampleText'
+import WordList from 'components/WordList'
 
 interface IndexProps {
   letters: AlphabetLetter[]
+  words: DictionaryEntry[],
 }
 
 interface IndexStaticProps {
@@ -17,15 +21,17 @@ interface IndexStaticProps {
 
 export async function getStaticProps(): Promise<IndexStaticProps> {
   const letters = getAlphabet()
+  const randomEntries = getRandomEntries()
 
   return {
     props: {
       letters,
+      words: randomEntries,
     },
   }
 }
 
-export default function Index({ letters }: IndexProps) {
+export default function Index({ letters, words }: IndexProps) {
   return (
     <Layout letters={letters} type='page' content={null}>
       <ContentArea>
@@ -51,6 +57,9 @@ export default function Index({ letters }: IndexProps) {
 
         <SampleText />
       </ContentArea>
+
+      <h3>Random entries from the dictionary:</h3>
+      <WordList words={words} showDefinition={true}/>
     </Layout>
   )
 }
