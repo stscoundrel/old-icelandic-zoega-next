@@ -50,6 +50,8 @@ describe('Word page: render & usage', () => {
     },
   ]
 
+  const runes = 'ᛚᛁᚢᚾᛁᛏᚢᚱᚱ'
+
   const alphabet = getAlphabet()
 
   test('Does not crash', () => {
@@ -61,6 +63,7 @@ describe('Word page: render & usage', () => {
         letters={alphabet}
         abbreviations={abbreviations}
         crosslinks={crosslinks}
+        runes={runes}
       />,
     )
   })
@@ -72,6 +75,7 @@ describe('Word page: render & usage', () => {
         letters={alphabet}
         abbreviations={abbreviations}
         crosslinks={crosslinks}
+        runes={runes}
       />,
     ).toJSON()
     expect(tree).toMatchSnapshot()
@@ -91,6 +95,7 @@ describe('Word page: render & usage', () => {
         letters={alphabet}
         abbreviations={abbreviations}
         crosslinks={crosslinks}
+        runes={runes}
       />,
     )
 
@@ -149,6 +154,7 @@ describe('Word page: data fetching', () => {
             url: 'https://old-norwegian-dictionary.vercel.app/word/leynidyrr',
           },
         ],
+        runes: 'ᛚᛁᚢᚾᛁᛏᚢᚱᚱ',
       },
     }
 

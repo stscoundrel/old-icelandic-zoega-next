@@ -2,9 +2,10 @@ import { useRouter } from 'next/router'
 
 // Services.
 import {
-  getWord, getAlphabet, DictionaryEntry, AlphabetLetter,
+  getWord, getAlphabet, type DictionaryEntry, type AlphabetLetter,
 } from 'lib/services/dictionary'
 import { getAbbreviations } from 'lib/services/abbreviations'
+import { youngerFuthark } from 'riimut'
 
 // Utils.
 import { redirect404 } from 'lib/utils/redirect-404'
@@ -13,7 +14,7 @@ import { redirect404 } from 'lib/utils/redirect-404'
 import Layout from 'components/Layout'
 import WordDefinition from 'components/WordDefinition'
 import Button from 'components/Button'
-import { Crosslink, getCrossLinks } from 'lib/services/crosslinks'
+import { type Crosslink, getCrossLinks } from 'lib/services/crosslinks'
 
 interface Abbreviation {
   abbreviation: string,
@@ -25,6 +26,7 @@ interface WordPageProps {
   letters: AlphabetLetter[],
   abbreviations: Abbreviation[], // TODO: real typing in service.
   crosslinks: Crosslink[],
+  runes: string,
 }
 
 export async function getStaticPaths() {
@@ -48,6 +50,7 @@ export async function getStaticProps({ params }) {
   const letters = getAlphabet()
   const abbreviations = getAbbreviations(entry)
   const crosslinks = getCrossLinks(entry)
+  const runes = youngerFuthark.lettersToRunes(entry.word)
 
   return {
     props: {
@@ -55,12 +58,13 @@ export async function getStaticProps({ params }) {
       letters,
       abbreviations,
       crosslinks,
+      runes,
     },
   }
 }
 
 export default function Word({
-  entry, letters, abbreviations, crosslinks,
+  entry, letters, abbreviations, crosslinks, runes,
 }: WordPageProps) {
   const router = useRouter()
 
@@ -70,7 +74,12 @@ export default function Word({
 
   return (
     <Layout type="word" content={entry} letters={letters}>
-      <WordDefinition data={entry} abbreviations={abbreviations} crosslinks={crosslinks}/>
+      <WordDefinition
+        entry={entry}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+        runes={runes}
+      />
       <Button text="Back" action={() => router.back()} />
     </Layout>
   )

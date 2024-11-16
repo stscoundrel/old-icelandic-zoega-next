@@ -1,12 +1,22 @@
-import { lettersToRunes } from 'younger-futhark'
 import { capitalize } from 'lib/utils/strings'
-import { addAbbreviationsToContent } from 'lib/services/abbreviations'
+import { type Abbreviation, addAbbreviationsToContent } from 'lib/services/abbreviations'
 import Abbreviations from 'components/Abbreviations'
 import Crosslinks from 'components/Crosslinks'
+import type { DictionaryEntry } from 'lib/services/dictionary'
+import type { Crosslink } from 'scandinavian-dictionary-crosslinker'
 import styles from './WordDefinition.module.scss'
 
-export default function WordDefinition({ data, abbreviations, crosslinks }) {
-  const { word, definitions } = data
+interface WordDefinitionProps{
+  entry: DictionaryEntry,
+  abbreviations: Abbreviation[],
+  crosslinks: Crosslink[],
+  runes: string,
+}
+
+export default function WordDefinition({
+  entry, abbreviations, crosslinks, runes,
+}: WordDefinitionProps) {
+  const { word, definitions } = entry
 
   return (
     <article className={styles.section}>
@@ -30,12 +40,12 @@ export default function WordDefinition({ data, abbreviations, crosslinks }) {
             dangerouslySetInnerHTML={{
               __html: addAbbreviationsToContent(definition, abbreviations),
             } }
-          ></dd>
+          />
         </dl>
       ))}
 
       <p>Possible runic inscription in <em>Younger Futhark:</em>
-          <span className={styles.rune}>{ lettersToRunes(word) }</span>
+          <span className={styles.rune}>{ runes }</span>
         </p>
 
       <Abbreviations abbreviations={abbreviations} />
