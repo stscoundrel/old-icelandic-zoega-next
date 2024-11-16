@@ -5403,10 +5403,10 @@ old-icelandic-zoega@^1.2.5:
   resolved "https://registry.yarnpkg.com/old-icelandic-zoega/-/old-icelandic-zoega-1.2.5.tgz#9c26b8dd4a0d8e577802ecabcb22c33c7569c2ed"
   integrity sha512-OFzoVV96tsdy8u4luy/pt+N0pWPv4DG84RB7uPdIHknkQ+gE+HOB4L7Nr0nSstK3KklKPCceMLzZ2OKG6NFfyg==
 
-old-norse-alphabet-sort@^1.1.12:
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/old-norse-alphabet-sort/-/old-norse-alphabet-sort-1.1.12.tgz#0901bf235e69eee18985904bc9e80a8a1720e4d2"
-  integrity sha512-LYgdTyBrHGEv45Db+xl5vQQbK5rZA+fS/9kEQOkOB0lkoFP1M1cvjjitolfxvWBEeYfjq2/6o7lvZl8VSD8Hfw==
+old-norse-alphabet-sort@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/old-norse-alphabet-sort/-/old-norse-alphabet-sort-1.1.13.tgz#9c929f6b782eeae09594abde1eddabf77719c55f"
+  integrity sha512-D14S4PDOKRL7eVXuQqQkCav+7AUKns6XHygcK2NR3NWNdiDfrpUgdSycWRbdPwpy1Zvdr1K2O0w2+Epv4BIFcQ==
   dependencies:
     old-norse-alphabet "^1.1.2"
 
