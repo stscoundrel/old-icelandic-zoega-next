@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 // Services.
 import {
   getWord, getAlphabet, type DictionaryEntry, type AlphabetLetter,
+  getInitialWordsToBuild,
 } from 'lib/services/dictionary'
 import { getAbbreviations } from 'lib/services/abbreviations'
 import { youngerFuthark } from 'riimut'
@@ -29,9 +30,31 @@ interface WordPageProps {
   runes: string,
 }
 
-export async function getStaticPaths() {
+interface WordPath{
+  params: {
+      word: string
+  }
+}
+
+interface WordPageStaticPathsResponseSchema{
+  paths: WordPath[]
+  fallback: string | boolean
+}
+
+/**
+ * There are too many word paths for Vercel to build.
+ * It hits 16 000 file limit.
+ *
+ * Build around 6000 pages initially and rest as they are accessed
+ * or remotely revalidated via API.
+ */
+export async function getStaticPaths(): Promise<WordPageStaticPathsResponseSchema> {
+  const initialPages = getInitialWordsToBuild()
+
   return {
-    paths: [],
+    paths: initialPages.map((slug) => ({
+      params: { word: slug },
+    })),
     fallback: 'blocking',
   }
 }

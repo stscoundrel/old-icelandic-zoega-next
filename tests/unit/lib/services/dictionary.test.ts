@@ -3,6 +3,7 @@ import { isArray } from 'volva'
 import { matchesSchema } from 'jafningjar'
 import {
   getAllWords, getByLetter, getWord, getAlphabet,
+  getInitialWordsToBuild,
 } from 'lib/services/dictionary'
 
 describe('Dictionary tests', () => {
@@ -108,5 +109,22 @@ describe('Dictionary tests', () => {
     })
 
     expect(foundÖ).toBeTruthy();
+  })
+
+  test('Returns initial batch of pages to build', () => {
+    const wordsToBuild = getInitialWordsToBuild()
+
+    // Correct amount sampled.
+    expect(wordsToBuild.length).toEqual(5991)
+
+    // Deterministic entry slugs, roughly spread through dictionary.
+    expect(wordsToBuild[0]).toEqual('a')
+    expect(wordsToBuild[10]).toEqual('afflutningr')
+    expect(wordsToBuild[100]).toEqual('allfamennr')
+    expect(wordsToBuild[1000]).toEqual('dvala')
+    expect(wordsToBuild[2000]).toEqual('handargagn')
+    expect(wordsToBuild[3000]).toEqual('lausliga')
+    expect(wordsToBuild[4000]).toEqual('sem')
+    expect(wordsToBuild[5000]).toEqual('undanhald')
   })
 })
