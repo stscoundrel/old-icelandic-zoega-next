@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom/client'
 import renderer from 'react-test-renderer'
 import Word, { getStaticProps, getStaticPaths } from 'pages/word/[word]'
-import { getAlphabet } from 'lib/services/dictionary'
+import { DictionaryEntry, getAlphabet } from 'lib/services/dictionary'
+import { DictionarySource } from 'scandinavian-dictionary-crosslinker'
 
 const mockHandler = jest.fn()
 
@@ -42,11 +43,11 @@ describe('Word page: render & usage', () => {
   const crosslinks = [
     {
       url: 'https://cleasby-vigfusson-dictionary.vercel.app/word/abbadis',
-      source: 'old-norse',
+      source: 'old-norse' as DictionarySource,
     },
     {
       url: 'https://old-norwegian-dictionary.vercel.app/word/abbadis',
-      source: 'old-norwegian',
+      source: 'old-norwegian' as DictionarySource,
     },
   ]
 
@@ -83,7 +84,13 @@ describe('Word page: render & usage', () => {
 
   test('Returns null if entry is unavailable', () => {
     const tree = renderer.create(
-      <Word entry={null} letters={getAlphabet()} abbreviations={abbreviations} crosslinks={[]} />,
+      <Word
+        entry={null as unknown as DictionaryEntry}
+        letters={getAlphabet()}
+        abbreviations={abbreviations}
+        crosslinks={[]}
+        runes={runes}
+      />,
     ).toJSON()
     expect(tree).toBeNull()
   })

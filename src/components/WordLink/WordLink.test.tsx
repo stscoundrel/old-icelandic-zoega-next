@@ -1,10 +1,12 @@
 import ReactDOM from 'react-dom/client'
 import renderer from 'react-test-renderer'
+import { DictionaryEntry } from 'lib/services/dictionary'
 import WordLink from './index'
 
-const word = {
+const word: DictionaryEntry = {
   word: 'af-burðr',
   slug: 'af-burdr',
+  definitions: [],
 }
 
 describe('WordLink component', () => {

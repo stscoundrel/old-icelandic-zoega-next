@@ -12,6 +12,6 @@ describe('String utils tests', () => {
   })
 
   test('Returns incorrect content as-is', () => {
-    expect(removeHTML(null)).toBe(null)
+    expect(removeHTML(null as unknown as string)).toBe(null)
   })
 })
