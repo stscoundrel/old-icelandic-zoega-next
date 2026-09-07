@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import renderer from 'react-test-renderer'
+import { DictionarySource } from 'scandinavian-dictionary-crosslinker'
 import WordDefinition from './index'
 import styles from './WordDefinition.module.scss'
 
@@ -25,11 +26,11 @@ const abbreviations = [
 const crosslinks = [
   {
     url: 'https://cleasby-vigfusson-dictionary.vercel.app/word/abbadis',
-    source: 'old-norse',
+    source: 'old-norse' as DictionarySource,
   },
   {
     url: 'https://old-norwegian-dictionary.vercel.app/word/abbadis',
-    source: 'old-norwegian',
+    source: 'old-norwegian' as DictionarySource,
   },
 ]
 const runes = 'ᛚᛁᚢᚾᛁᛏᚢᚱᚱ'

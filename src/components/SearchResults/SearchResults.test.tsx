@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import renderer from 'react-test-renderer'
+import { SearchResult } from 'lib/services/search'
 import SearchResults from './index'
 
 const words = [
@@ -52,7 +53,7 @@ describe('SearchResults component', () => {
   })
 
   test('Matches snapshot (max results)', () => {
-    const maxResults = []
+    const maxResults: SearchResult[] = []
     for (let i = 0; i < 150; i += 1) {
       maxResults.push(words[0])
     }
