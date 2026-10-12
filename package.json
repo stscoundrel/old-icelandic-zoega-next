@@ -31,8 +31,8 @@
     "old-icelandic-zoega": "^1.2.5",
     "old-icelandic-zoega-abbreviations": "^1.0.3",
     "old-norse-alphabet": "^1.2.4",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "reset-css": "^5.0.2",
     "riimut": "^0.9.1",
     "sass": "^1.105.1",
@@ -45,7 +45,7 @@
   "devDependencies": {
     "@types/cleasby-vigfusson-dictionary": "^1.0.2",
     "@types/jest": "^30.0.0",
-    "@types/react": "^18.3.10",
+    "@types/react": "^19.0.0",
     "cypress": "^15.11.0",
     "identity-obj-proxy": "^3.0.0",
     "jafningjar": "^1.0.0",
@@ -54,9 +54,11 @@
     "node-mocks-http": "^1.18.1",
     "old-norse-alphabet-sort": "^1.1.13",
     "prettier": "3.9.9",
-    "react-test-renderer": "^18.3.1",
+    "react-test-renderer": "19.3.0",
     "spyrjari": "^1.0.4",
     "typescript": "^5.9.3",
-    "volva": "^2.0.5"
+    "volva": "^2.0.5",
+    "@types/react-dom": "^19.0.0",
+    "@types/react-test-renderer": "^19.0.0"
   }
 }

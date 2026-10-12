@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom/client'
-import renderer from 'react-test-renderer'
+import { createRenderer, renderToDOM } from '../../../tests/helpers/react'
 import { SearchResult } from 'lib/services/search'
 import SearchResults from './index'
 
@@ -38,13 +37,11 @@ const words = [
 
 describe('SearchResults component', () => {
   test('Does not crash', () => {
-    const div = document.createElement('div')
-    const root = ReactDOM.createRoot(div)
-    root.render(<SearchResults words={words} />)
+    renderToDOM(<SearchResults words={words} />)
   })
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(<SearchResults words={words} />).toJSON()
+    const tree = createRenderer(<SearchResults words={words} />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
@@ -53,7 +50,7 @@ describe('SearchResults component', () => {
     for (let i = 0; i < 150; i += 1) {
       maxResults.push(words[0])
     }
-    const tree = renderer.create(<SearchResults words={maxResults} />).toJSON()
+    const tree = createRenderer(<SearchResults words={maxResults} />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
