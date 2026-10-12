@@ -15,9 +15,9 @@ describe('Abbreviations component', () => {
   ]
 
   test('Matches the snapshot', () => {
-    const tree = renderer.create(
-      <Abbreviations abbreviations={abbreviations} />,
-    ).toJSON()
+    const tree = renderer
+      .create(<Abbreviations abbreviations={abbreviations} />)
+      .toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

@@ -10,7 +10,6 @@ const revalidatePages = async (secret, baseUrl = 'https://old-icelandic.vercel.a
       const end = start + 250
       const url = `${baseUrl}/api/revalidate?secret=${secret}&start=${start}&end=${end}`
       console.time(`${start} - ${end}`)
-      // eslint-disable-next-line no-await-in-loop
       await fetch(url)
 
       console.log(`Finished words ${start} - ${end}`)

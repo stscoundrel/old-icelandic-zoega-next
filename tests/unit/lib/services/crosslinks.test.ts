@@ -1,9 +1,5 @@
-import {
-  DictionaryEntry,
-} from 'lib/services/dictionary'
-import {
-  getCrossLinks,
-} from 'lib/services/crosslinks'
+import { DictionaryEntry } from 'lib/services/dictionary'
+import { getCrossLinks } from 'lib/services/crosslinks'
 
 // Entry which does not produce crosslink matches.
 const entry1: DictionaryEntry = {
@@ -17,7 +13,6 @@ const entry2: DictionaryEntry = {
   word: '',
   definitions: [],
   slug: 'aaustr',
-
 }
 
 describe('Crosslinks service tests', () => {
@@ -39,7 +34,9 @@ describe('Crosslinks service tests', () => {
       },
     ].sort((a, b) => (a.source > b.source ? 1 : -1))
 
-    const result = getCrossLinks(entry2).sort((a, b) => (a.source > b.source ? 1 : -1))
+    const result = getCrossLinks(entry2).sort((a, b) =>
+      a.source > b.source ? 1 : -1,
+    )
 
     expect(result).toEqual(expected)
   })

@@ -5,9 +5,7 @@ describe('Link utils', () => {
 
   const word = {
     word: 'aflsmaðr',
-    definitions: [
-      'm. <i>strong man</i>.',
-    ],
+    definitions: ['m. <i>strong man</i>.'],
     slug: 'aflsmadr',
   }
 

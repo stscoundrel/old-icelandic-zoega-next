@@ -17,6 +17,15 @@ Related projects:
 - Optimized for fast load times (PWA)
 - SEO, Accessibility and Schema optimized, high lighthouse scores
 
+## Development checks
+
+- `yarn lint` checks formatting in `src` and `tests`.
+- `yarn fix` formats those directories with Prettier.
+- `yarn typecheck` checks TypeScript without emitting files.
+- `yarn test:unit` runs Jest.
+
+Prettier uses single quotes and omits semicolons. CI checks formatting and TypeScript.
+
 ## Motivation
 
 There are various versions of different Old Norse dictionaries online. Many of these are either incomplete, or their usability has grown old. Most of them are either missing a search feature, or they may be a bit hefty to load in mobile.

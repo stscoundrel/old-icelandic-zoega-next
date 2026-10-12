@@ -12019,7 +12019,8 @@ exports[`Letter page: render Matches snapshot 1`] = `
           Based on \`"A Concise Dictionary of Old Icelandic\`" dictionary.
         </p>
         <p>
-          Geir Zoëga attempted to to make an easier-to-approach version of the more full 
+          Geir Zoëga attempted to to make an easier-to-approach version of the more full
+           
           <a
             href="https://cleasby-vigfusson-dictionary.vercel.app/"
             rel="noopener noreferrer"

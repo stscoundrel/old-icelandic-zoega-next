@@ -12,8 +12,12 @@ const getDefinedTermSetData = (content) => {
     '@context': 'https://schema.org/',
     '@type': 'DefinedTermSet',
     '@id': getLetterLink(letter),
-    name: removeHTML(`Old Icelandic Dictionary - Letter ${letter.letter.toUpperCase()}`),
-    description: removeHTML(`Old Icelandic words starting with letter ${letter.letter.toUpperCase()}`),
+    name: removeHTML(
+      `Old Icelandic Dictionary - Letter ${letter.letter.toUpperCase()}`,
+    ),
+    description: removeHTML(
+      `Old Icelandic words starting with letter ${letter.letter.toUpperCase()}`,
+    ),
   }
 }
 

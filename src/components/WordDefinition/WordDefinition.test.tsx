@@ -6,9 +6,7 @@ import styles from './WordDefinition.module.scss'
 
 const word = {
   word: 'leynidyrr',
-  definitions: [
-    'f. pl. <i>secret door</i>.',
-  ],
+  definitions: ['f. pl. <i>secret door</i>.'],
   slug: 'leynidyrr',
 }
 
@@ -50,14 +48,16 @@ describe('WordDefinition component', () => {
   })
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(
-      <WordDefinition
-        entry={word}
-        abbreviations={abbreviations}
-        crosslinks={crosslinks}
-        runes={runes}
-      />,
-    ).toJSON()
+    const tree = renderer
+      .create(
+        <WordDefinition
+          entry={word}
+          abbreviations={abbreviations}
+          crosslinks={crosslinks}
+          runes={runes}
+        />,
+      )
+      .toJSON()
     expect(tree).toMatchSnapshot()
   })
 
@@ -86,6 +86,8 @@ describe('WordDefinition component', () => {
     )
     const { root } = tree
 
-    expect(root.findAllByProps({ className: styles.abbreviation }).length).toEqual(2)
+    expect(
+      root.findAllByProps({ className: styles.abbreviation }).length,
+    ).toEqual(2)
   })
 })

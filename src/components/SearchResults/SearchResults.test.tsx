@@ -19,13 +19,9 @@ const words = [
   },
   {
     word: 'aðal-vellir',
-    definitions: [
-      'm. pl. = óðalvellir, Rm.',
-    ],
+    definitions: ['m. pl. = óðalvellir, Rm.'],
     slug: 'adal-vellir',
-    foundIn: [
-      'In headword',
-    ],
+    foundIn: ['In headword'],
   },
   {
     word: 'AF',

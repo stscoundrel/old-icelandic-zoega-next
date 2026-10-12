@@ -582,7 +582,8 @@ exports[`Index page Matches snapshot 1`] = `
           >
             maðr
           </a>
-          , 
+          ,
+           
           <a
             href="/word/sonr"
             onClick={[Function]}
@@ -591,7 +592,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             sonr
           </a>
-           Bjálfa 
+           
+          Bjálfa
+           
           <a
             href="/word/ok"
             onClick={[Function]}
@@ -600,7 +603,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             ok
           </a>
-           Hallberu, 
+           
+          Hallberu,
+           
           <a
             href="/word/dottir"
             onClick={[Function]}
@@ -671,7 +676,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             systir
           </a>
-           Hallbjarnar 
+           
+          Hallbjarnar
+           
           <a
             href="/word/halftroll"
             onClick={[Function]}
@@ -680,7 +687,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             hálftrölls
           </a>
-           í Hrafnistu, 
+           
+          í Hrafnistu,
+           
           <a
             href="/word/fadir"
             onClick={[Function]}
@@ -698,7 +707,8 @@ exports[`Index page Matches snapshot 1`] = `
           >
             Ketils
           </a>
-           hængs. 
+           
+          hængs. 
           <a
             href="/word/ulfr"
             onClick={[Function]}
@@ -761,7 +771,8 @@ exports[`Index page Matches snapshot 1`] = `
           >
             sterkr
           </a>
-          , 
+          ,
+           
           <a
             href="/word/at"
             onClick={[Function]}
@@ -842,7 +853,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             var
           </a>
-           á 
+           
+          á
+           
           <a
             href="/word/ungr"
             onClick={[Function]}
@@ -860,7 +873,8 @@ exports[`Index page Matches snapshot 1`] = `
           >
             aldri
           </a>
-          , lá 
+          , lá
+           
           <a
             href="/word/hann"
             onClick={[Function]}
@@ -968,7 +982,8 @@ exports[`Index page Matches snapshot 1`] = `
           >
             maðr
           </a>
-          , 
+          ,
+           
           <a
             href="/word/er"
             onClick={[Function]}
@@ -995,7 +1010,8 @@ exports[`Index page Matches snapshot 1`] = `
           >
             var
           </a>
-           Berðlu-Kári, 
+           
+          Berðlu-Kári, 
           <a
             href="/word/gofugr"
             onClick={[Function]}
@@ -1076,7 +1092,8 @@ exports[`Index page Matches snapshot 1`] = `
           >
             áræði
           </a>
-          . 
+          .
+           
           <a
             href="/word/hann"
             onClick={[Function]}
@@ -2943,7 +2960,8 @@ exports[`Index page Matches snapshot 1`] = `
           Based on \`"A Concise Dictionary of Old Icelandic\`" dictionary.
         </p>
         <p>
-          Geir Zoëga attempted to to make an easier-to-approach version of the more full 
+          Geir Zoëga attempted to to make an easier-to-approach version of the more full
+           
           <a
             href="https://cleasby-vigfusson-dictionary.vercel.app/"
             rel="noopener noreferrer"

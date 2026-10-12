@@ -27,9 +27,7 @@ const words = [
   },
   {
     word: 'af-deilingr',
-    definitions: [
-      'm. <i>part, portion, share,</i> Bs. i. 881.',
-    ],
+    definitions: ['m. <i>part, portion, share,</i> Bs. i. 881.'],
     slug: 'af-deilingr',
   },
   {

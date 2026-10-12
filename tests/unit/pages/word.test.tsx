@@ -23,9 +23,7 @@ jest.mock('next/router', () => ({
 describe('Word page: render & usage', () => {
   const word = {
     word: 'leynidyrr',
-    definitions: [
-      'f. pl. <i>secret door</i>.',
-    ],
+    definitions: ['f. pl. <i>secret door</i>.'],
     slug: 'leynidyrr',
   }
 
@@ -70,28 +68,32 @@ describe('Word page: render & usage', () => {
   })
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(
-      <Word
-        entry={word}
-        letters={alphabet}
-        abbreviations={abbreviations}
-        crosslinks={crosslinks}
-        runes={runes}
-      />,
-    ).toJSON()
+    const tree = renderer
+      .create(
+        <Word
+          entry={word}
+          letters={alphabet}
+          abbreviations={abbreviations}
+          crosslinks={crosslinks}
+          runes={runes}
+        />,
+      )
+      .toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   test('Returns null if entry is unavailable', () => {
-    const tree = renderer.create(
-      <Word
-        entry={null as unknown as DictionaryEntry}
-        letters={getAlphabet()}
-        abbreviations={abbreviations}
-        crosslinks={[]}
-        runes={runes}
-      />,
-    ).toJSON()
+    const tree = renderer
+      .create(
+        <Word
+          entry={null as unknown as DictionaryEntry}
+          letters={getAlphabet()}
+          abbreviations={abbreviations}
+          crosslinks={[]}
+          runes={runes}
+        />,
+      )
+      .toJSON()
     expect(tree).toBeNull()
   })
 
@@ -113,7 +115,7 @@ describe('Word page: render & usage', () => {
 
       // Assert mockrouter received a push.
       expect(mockHandler).toHaveBeenCalled()
-      expect(mockHandler.mock.calls.length).toBe(1);
+      expect(mockHandler.mock.calls.length).toBe(1)
     })
   })
 })
@@ -133,9 +135,7 @@ describe('Word page: data fetching', () => {
       props: {
         entry: {
           word: 'leynidyrr',
-          definitions: [
-            'f. pl. <i>secret door</i>.',
-          ],
+          definitions: ['f. pl. <i>secret door</i>.'],
           slug: 'leynidyrr',
         },
         abbreviations: [

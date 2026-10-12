@@ -2,7 +2,10 @@ import { useRouter } from 'next/router'
 
 // Services.
 import {
-  getWord, getAlphabet, type DictionaryEntry, type AlphabetLetter,
+  getWord,
+  getAlphabet,
+  type DictionaryEntry,
+  type AlphabetLetter,
   getInitialWordsToBuild,
 } from 'lib/services/dictionary'
 import { getAbbreviations } from 'lib/services/abbreviations'
@@ -18,25 +21,25 @@ import Button from 'components/Button'
 import { type Crosslink, getCrossLinks } from 'lib/services/crosslinks'
 
 interface Abbreviation {
-  abbreviation: string,
-  explanation: string,
+  abbreviation: string
+  explanation: string
 }
 
 interface WordPageProps {
-  entry: DictionaryEntry,
-  letters: AlphabetLetter[],
-  abbreviations: Abbreviation[], // TODO: real typing in service.
-  crosslinks: Crosslink[],
-  runes: string,
+  entry: DictionaryEntry
+  letters: AlphabetLetter[]
+  abbreviations: Abbreviation[] // TODO: real typing in service.
+  crosslinks: Crosslink[]
+  runes: string
 }
 
-interface WordPath{
+interface WordPath {
   params: {
-      word: string
+    word: string
   }
 }
 
-interface WordPageStaticPathsResponseSchema{
+interface WordPageStaticPathsResponseSchema {
   paths: WordPath[]
   fallback: string | boolean
 }
@@ -87,7 +90,11 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Word({
-  entry, letters, abbreviations, crosslinks, runes,
+  entry,
+  letters,
+  abbreviations,
+  crosslinks,
+  runes,
 }: WordPageProps) {
   const router = useRouter()
 

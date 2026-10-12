@@ -4,23 +4,17 @@ describe('SEO / meta tags tests', () => {
   const words = [
     {
       word: 'kesti',
-      definitions: [
-        'from köstr, <i>pile</i>.',
-      ],
+      definitions: ['from köstr, <i>pile</i>.'],
       slug: 'kesti',
     },
     {
       word: 'ketilhadda',
-      definitions: [
-        'f. <i>kettle-handle</i>.',
-      ],
+      definitions: ['f. <i>kettle-handle</i>.'],
       slug: 'ketilhadda',
     },
     {
       word: 'ketilhrím',
-      definitions: [
-        'n. <i>kettle-grime, soot</i>.',
-      ],
+      definitions: ['n. <i>kettle-grime, soot</i>.'],
       slug: 'ketilhrim',
     },
     {
@@ -39,9 +33,7 @@ describe('SEO / meta tags tests', () => {
     },
     {
       word: 'ketlingr',
-      definitions: [
-        '(-s, -ar), m. <i>kitten</i>.',
-      ],
+      definitions: ['(-s, -ar), m. <i>kitten</i>.'],
       slug: 'ketlingr',
     },
   ]
@@ -60,7 +52,8 @@ describe('SEO / meta tags tests', () => {
   test('Handles "letter" seo fields', () => {
     const expected = {
       title: 'Old Icelandic words starting with letter K',
-      description: 'Meanings of Old Icelandic words starting with "K", such as kesti, ketilhadda, ketilhrím and ketill',
+      description:
+        'Meanings of Old Icelandic words starting with "K", such as kesti, ketilhadda, ketilhrím and ketill',
     }
 
     const result = getSeo(words, 'letter')
