@@ -1,5 +1,7 @@
+@use '../../styles/variables';
+
 .link {
-  color: $color-blue;
+  color: variables.$color-blue;
   display: block;
   max-width: 160px;
   padding: 2px 0;
