@@ -37,3 +37,9 @@ I'm often reading Old Norse text outside in the park, but browsing back and fort
 ### About "A Concise Dictionary of Old Icelandic"
 
 *"A Concise Dictionary of Old Icelandic"* dictionary was published in 1910 by Geir Zoëga, which leads to there being many public domain versions of the book available. Zoëgas attempt was to made easier-to-approach version of the more full *Cleasby - Vigfusson dictionary*, specifically for beginners and those interested in Old Icelandic prose writing.
+
+## PWA support
+
+Serwist generates `public/sw.js` from `src/sw.ts` during `npm run build` and automatically registers it in production. The worker precaches application assets and uses default runtime caching for visited pages. It is disabled outside production. The existing manifest and icons are in `public`.
+
+The build uses webpack for the Serwist integration. To check service-worker behavior locally, run `npm run build` followed by `npm start`.
