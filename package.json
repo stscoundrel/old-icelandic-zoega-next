@@ -27,7 +27,7 @@
     "@serwist/next": "^9.5.13",
     "abbreviatrix": "^1.0.8",
     "markari": "^1.0.7",
-    "next": "^16.3.6",
+    "next": "16.4.0",
     "old-icelandic-zoega": "^1.2.5",
     "old-icelandic-zoega-abbreviations": "^1.0.3",
     "old-norse-alphabet": "^1.2.4",
@@ -46,6 +46,8 @@
     "@types/cleasby-vigfusson-dictionary": "^1.0.2",
     "@types/jest": "^30.0.0",
     "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/react-test-renderer": "^19.0.0",
     "cypress": "^15.11.0",
     "identity-obj-proxy": "^3.0.0",
     "jafningjar": "^1.0.0",
@@ -57,8 +59,6 @@
     "react-test-renderer": "19.3.0",
     "spyrjari": "^1.0.4",
     "typescript": "^5.9.3",
-    "volva": "^2.0.5",
-    "@types/react-dom": "^19.0.0",
-    "@types/react-test-renderer": "^19.0.0"
+    "volva": "^2.0.5"
   }
 }
