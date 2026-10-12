@@ -9,7 +9,7 @@ interface CrossLinkProps {
 export default function Crosslinks({ crosslinks }: CrossLinkProps) {
   const getRelatedDictionaryName = (source: string): string => {
     if (source === 'old-norwegian') {
-      return 'Old Norwegian - Johan Fritzner\'s Dictionary'
+      return "Old Norwegian - Johan Fritzner's Dictionary"
     }
 
     if (source === 'old-norse') {
@@ -17,11 +17,11 @@ export default function Crosslinks({ crosslinks }: CrossLinkProps) {
     }
 
     if (source === 'old-swedish') {
-      return 'Old Swedish - K.F Söderwall\'s Dictionary'
+      return "Old Swedish - K.F Söderwall's Dictionary"
     }
 
     if (source === 'old-danish') {
-      return 'Old Danish - Otto Kalkar\'s Dictionary'
+      return "Old Danish - Otto Kalkar's Dictionary"
     }
 
     return ''
@@ -34,7 +34,8 @@ export default function Crosslinks({ crosslinks }: CrossLinkProps) {
   return (
     <>
       <h4>Also available in related dictionaries:</h4>
-      <p>This headword also appears in dictionaries of other languages closely
+      <p>
+        This headword also appears in dictionaries of other languages closely
         related to Old Icelandic.
       </p>
       <ul className={styles.list}>

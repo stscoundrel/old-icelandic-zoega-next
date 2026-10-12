@@ -6,9 +6,7 @@ import {
 describe('Abbreviations tests', () => {
   const entry = {
     word: 'leynidyrr',
-    definitions: [
-      'f. pl. <i>secret door</i>.',
-    ],
+    definitions: ['f. pl. <i>secret door</i>.'],
     slug: 'leynidyrr',
   }
 
@@ -32,8 +30,12 @@ describe('Abbreviations tests', () => {
   test('Adds abbr tags to content', () => {
     const abbreviations = getAbbreviations(entry)
 
-    const result = addAbbreviationsToContent(entry.definitions[0], abbreviations)
-    const expected = '<abbr title="feminine.">f.</abbr> <abbr title="plural.">pl.</abbr> <i>secret door</i>.'
+    const result = addAbbreviationsToContent(
+      entry.definitions[0],
+      abbreviations,
+    )
+    const expected =
+      '<abbr title="feminine.">f.</abbr> <abbr title="plural.">pl.</abbr> <i>secret door</i>.'
 
     expect(result).toEqual(expected)
   })

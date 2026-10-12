@@ -2,7 +2,10 @@ import { getDictionary } from 'old-icelandic-zoega'
 import { isArray } from 'volva'
 import { matchesSchema } from 'jafningjar'
 import {
-  getAllWords, getByLetter, getWord, getAlphabet,
+  getAllWords,
+  getByLetter,
+  getWord,
+  getAlphabet,
   getInitialWordsToBuild,
 } from 'lib/services/dictionary'
 
@@ -108,7 +111,7 @@ describe('Dictionary tests', () => {
       }
     })
 
-    expect(foundÖ).toBeTruthy();
+    expect(foundÖ).toBeTruthy()
   })
 
   test('Returns initial batch of pages to build', () => {

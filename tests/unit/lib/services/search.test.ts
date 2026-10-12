@@ -27,9 +27,7 @@ describe('Search tests', () => {
       word: 'atskiljanligr',
       definitions: ['a. <i>various, different</i>.'],
       slug: 'atskiljanligr',
-      foundIn: [
-        'In headword: <mark>atskiljanligr</mark>',
-      ],
+      foundIn: ['In headword: <mark>atskiljanligr</mark>'],
     }
 
     expect(result[0]).toEqual(expected)
@@ -45,9 +43,7 @@ describe('Search tests', () => {
         'era útmakligt, <i>at it is not unmeet that</i>.',
       ],
       slug: 'a',
-      foundIn: [
-        'era <mark>útmakligt</mark>, <i>at it is not unmeet that</i>.',
-      ],
+      foundIn: ['era <mark>útmakligt</mark>, <i>at it is not unmeet that</i>.'],
     }
 
     expect(result[0]).toEqual(expected)
@@ -60,9 +56,7 @@ describe('Search tests', () => {
       word: 'afarúðigr',
       definitions: ['a. <i>overbearing</i>.'],
       slug: 'afarudigr',
-      foundIn: [
-        'In headword: <mark>afarúðigr</mark>',
-      ],
+      foundIn: ['In headword: <mark>afarúðigr</mark>'],
     }
 
     expect(result[0]).toEqual(expected)

@@ -6,31 +6,25 @@ describe('Schema structure tests', () => {
   const words = [
     {
       word: 'kesti',
-      definitions: [
-        'from köstr, <i>pile</i>.',
-      ],
+      definitions: ['from köstr, <i>pile</i>.'],
       slug: 'kesti',
     },
     {
       word: 'ketilhadda',
-      definitions: [
-        'f. <i>kettle-handle</i>.',
-      ],
+      definitions: ['f. <i>kettle-handle</i>.'],
       slug: 'ketilhadda',
     },
   ]
 
   test('Handles "word" Schema', () => {
-    const expected = JSON.stringify(
-      {
-        '@context': 'https://schema.org/',
-        '@type': 'DefinedTerm',
-        '@id': 'https://oldicelandic.test/word/ketilhadda',
-        name: 'Old Icelandic Dictionary - Ketilhadda',
-        description: 'f. kettle-handle.',
-        inDefinedTermSet: 'https://oldicelandic.test',
-      },
-    )
+    const expected = JSON.stringify({
+      '@context': 'https://schema.org/',
+      '@type': 'DefinedTerm',
+      '@id': 'https://oldicelandic.test/word/ketilhadda',
+      name: 'Old Icelandic Dictionary - Ketilhadda',
+      description: 'f. kettle-handle.',
+      inDefinedTermSet: 'https://oldicelandic.test',
+    })
 
     const result = getSchema(words[1], 'word')
 
@@ -38,15 +32,13 @@ describe('Schema structure tests', () => {
   })
 
   test('Handles "letter" Schema', () => {
-    const expected = JSON.stringify(
-      {
-        '@context': 'https://schema.org/',
-        '@type': 'DefinedTermSet',
-        '@id': 'https://oldicelandic.test/letter/k',
-        name: 'Old Icelandic Dictionary - Letter K',
-        description: 'Old Icelandic words starting with letter K',
-      },
-    )
+    const expected = JSON.stringify({
+      '@context': 'https://schema.org/',
+      '@type': 'DefinedTermSet',
+      '@id': 'https://oldicelandic.test/letter/k',
+      name: 'Old Icelandic Dictionary - Letter K',
+      description: 'Old Icelandic words starting with letter K',
+    })
 
     const result = getSchema(words, 'letter')
 
@@ -54,26 +46,24 @@ describe('Schema structure tests', () => {
   })
 
   test('Handles "breadcrumbs" Schema', () => {
-    const expected = JSON.stringify(
-      {
-        '@context': 'https://schema.org/',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'First breadcrumb',
-            item: 'https://oldicelandic.test/first-link',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Second breadcrumb',
-            item: 'https://oldicelandic.test/second-link',
-          },
-        ],
-      },
-    )
+    const expected = JSON.stringify({
+      '@context': 'https://schema.org/',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'First breadcrumb',
+          item: 'https://oldicelandic.test/first-link',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Second breadcrumb',
+          item: 'https://oldicelandic.test/second-link',
+        },
+      ],
+    })
 
     const breadcrumbs = [
       {
@@ -91,15 +81,13 @@ describe('Schema structure tests', () => {
   })
 
   test('Handles "default" Schema', () => {
-    const expected = JSON.stringify(
-      {
-        '@context': 'https://schema.org/',
-        '@type': 'DefinedTermSet',
-        '@id': 'https://oldicelandic.test',
-        name: 'Old Icelandic Dictionary',
-        description: 'Old Icelandic words with English definitions',
-      },
-    )
+    const expected = JSON.stringify({
+      '@context': 'https://schema.org/',
+      '@type': 'DefinedTermSet',
+      '@id': 'https://oldicelandic.test',
+      name: 'Old Icelandic Dictionary',
+      description: 'Old Icelandic words with English definitions',
+    })
 
     const result = getSchema()
 

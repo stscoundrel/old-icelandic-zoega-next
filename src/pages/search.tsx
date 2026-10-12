@@ -6,11 +6,11 @@ import Layout from 'components/Layout'
 import SearchForm from 'components/SearchForm'
 
 interface SearchPageProps {
-  letters: AlphabetLetter[],
+  letters: AlphabetLetter[]
 }
 
 interface SearchPageStaticProps {
-  props: SearchPageProps,
+  props: SearchPageProps
 }
 
 export async function getStaticProps(): Promise<SearchPageStaticProps> {

@@ -1,17 +1,15 @@
-import Document, {
-  Html, Head, Main, NextScript,
-} from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class CustomDocument extends Document {
-    render() { // eslint-disable-line
+  render() {
     return (
-        <Html lang="en">
-          <Head />
-          <body>
-            <Main />
-            <NextScript />
-          </body>
-        </Html>
+      <Html lang="en">
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
     )
   }
 }

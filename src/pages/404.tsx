@@ -10,7 +10,7 @@ interface NotFoundProps {
 }
 
 interface NotFoundStaticProps {
-  props: NotFoundProps,
+  props: NotFoundProps
 }
 
 /**

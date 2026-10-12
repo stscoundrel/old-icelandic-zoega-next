@@ -8,13 +8,17 @@ describe('Index page', () => {
   test('Does not crash', () => {
     const div = document.createElement('div')
     const root = ReactDOM.createRoot(div)
-    root.render(<Index words={getAllWords().slice(0, 100)} letters={getAlphabet()} />)
+    root.render(
+      <Index words={getAllWords().slice(0, 100)} letters={getAlphabet()} />,
+    )
   })
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(
-      <Index words={getAllWords().slice(0, 100)} letters={getAlphabet()} />,
-    ).toJSON()
+    const tree = renderer
+      .create(
+        <Index words={getAllWords().slice(0, 100)} letters={getAlphabet()} />,
+      )
+      .toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
