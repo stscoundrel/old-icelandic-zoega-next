@@ -1,3 +1,5 @@
+import { Readable } from 'node:stream'
+import { SitemapStream, streamToPromise } from 'sitemap'
 import { getAllWords, getAlphabet } from 'lib/services/dictionary'
 import { getWordLink, getLetterLink } from 'lib/utils/links'
 
@@ -15,19 +17,13 @@ const formatLetters = (letters) =>
     priority: 0.5,
   }))
 
-/**
- * Accepts stream & streamtopromise as parameters.
- * This is usually not needed, but for reasons unknown Jest
- * fails if we require those libs here.
- */
-export const formatSitemap = (content, SitemapStream, streamToPromise) => {
+export const formatSitemap = (content) => {
   const stream = new SitemapStream({
     hostname: process.env.NEXT_PUBLIC_SITE_URL,
   })
-  content.forEach((entry) => stream.write(entry))
-  stream.end()
-
-  return streamToPromise(stream).then((data) => data.toString())
+  return streamToPromise(Readable.from(content).pipe(stream)).then((data) =>
+    data.toString(),
+  )
 }
 
 export const getSitemapContent = () => {
