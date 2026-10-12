@@ -46,6 +46,7 @@
   "devDependencies": {
     "@types/cleasby-vigfusson-dictionary": "^1.0.2",
     "@types/jest": "^30.0.0",
+    "@types/node": "^24.19.2",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@types/react-test-renderer": "^19.0.0",
@@ -59,7 +60,7 @@
     "prettier": "3.9.9",
     "react-test-renderer": "19.3.0",
     "spyrjari": "^1.0.4",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "volva": "^2.0.5"
   }
 }
