@@ -1,3 +1,6 @@
-@function rem($px, $body: $body-font-size) {
-  @return ($px / $body) + rem;
+@use 'sass:math';
+@use 'variables';
+
+@function rem($px, $body: variables.$body-font-size) {
+  @return math.div($px, $body) + rem;
 }
