@@ -178,6 +178,7 @@ exports[`Footer component Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               A
             </a>
@@ -191,6 +192,7 @@ exports[`Footer component Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               B
             </a>
