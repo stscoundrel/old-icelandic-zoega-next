@@ -1,7 +1,8 @@
 import { createMocks } from 'node-mocks-http'
 import sitemapHandler from 'pages/api/sitemap'
 
-describe('Sitemap  API endpoint', () => {
+describe('Sitemap API endpoint', () => {
+  beforeAll(() => jest.useRealTimers())
   test('Should return xml sitemap', async () => {
     process.env.NEXT_PUBLIC_SITE_URL = 'https://oldicelandic.test'
 
