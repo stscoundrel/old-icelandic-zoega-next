@@ -19,10 +19,12 @@ Related projects:
 
 ## Development checks
 
-- `yarn lint` checks formatting in `src` and `tests`.
-- `yarn fix` formats those directories with Prettier.
-- `yarn typecheck` checks TypeScript without emitting files.
-- `yarn test:unit` runs Jest.
+Install dependencies with `npm ci`.
+
+- `npm run lint` checks formatting in `src` and `tests`.
+- `npm run fix` formats those directories with Prettier.
+- `npm run typecheck` checks TypeScript without emitting files.
+- `npm run test:unit` runs Jest.
 
 Prettier uses single quotes and omits semicolons. CI checks formatting and TypeScript.
 
